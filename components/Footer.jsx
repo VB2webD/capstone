@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-function Footer() {
+export function Footer() {
   return (
     <StyledFooter>
       <Link href="/Specials">
@@ -20,8 +20,6 @@ function Footer() {
     </StyledFooter>
   );
 }
-
-export default Footer;
 
 const StyledFooter = styled.ul`
   position: fixed;
