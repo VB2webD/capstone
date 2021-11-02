@@ -5,16 +5,16 @@ import styled from "styled-components";
 function Footer() {
   return (
     <StyledFooter>
-      <Link href="/specials">
+      <Link href="/Specials">
         <a>Specials</a>
       </Link>
-      <Link href="/shop">
+      <Link href="/Shop">
         <a>Shop</a>
       </Link>
-      <Link href="/favourites">
+      <Link href="/Favourites">
         <a>Favourites</a>
       </Link>
-      <Link href="/checkout">
+      <Link href="/Checkout">
         <a>Checkout</a>
       </Link>
     </StyledFooter>

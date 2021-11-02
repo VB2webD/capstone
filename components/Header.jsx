@@ -14,7 +14,6 @@ const StyledHeader = styled.header`
   top: 0;
   width: 100vw;
   height: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
