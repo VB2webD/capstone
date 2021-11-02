@@ -1,13 +1,12 @@
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 import React from "react";
+import Layout from "../components/layout/Layout";
 
 const Specials = () => {
   return (
     <>
-      <Header title={"Specials"} />
-      <h1>Hello World</h1>
-      <Footer />
+      <Layout title={"Specials"} isVisible={true}>
+        <h1>Hello World</h1>
+      </Layout>
     </>
   );
 };

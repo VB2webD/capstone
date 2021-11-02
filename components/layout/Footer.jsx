@@ -1,20 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { useRouter } from "next/dist/client/router";
 
-export function Footer() {
+export function Footer({ isVisible }) {
+  const show = isVisible;
   return (
     <StyledFooter>
-      <Link href="/Specials">
+      <Link href="/specials">
         <a>Specials</a>
       </Link>
-      <Link href="/Shop">
+      <Link href="/shop">
         <a>Shop</a>
       </Link>
-      <Link href="/Favourites">
+      <Link href="/favourites">
         <a>Favourites</a>
       </Link>
-      <Link href="/Checkout">
+      <Link href="/checkout">
         <a>Checkout</a>
       </Link>
     </StyledFooter>
@@ -33,4 +35,5 @@ const StyledFooter = styled.ul`
   background-color: var(--bg-color);
   padding: 0;
   margin: 0;
+  z-index: 1;
 `;

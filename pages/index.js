@@ -1,12 +1,10 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import React from "react";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
   return (
-    <>
-      <Header title={"index"} />
+    <Layout title={"Index"} isVisible={true}>
       <h1>Hello World</h1>
-      <Footer />
-    </>
+    </Layout>
   );
 }

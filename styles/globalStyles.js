@@ -6,6 +6,7 @@ const globalStyles = createGlobalStyle`
 }
 html,
 body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
