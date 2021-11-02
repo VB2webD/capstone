@@ -1,0 +1,990 @@
+{
+  "bags": [
+    {
+      "slug": "classic-weingummi",
+      "name": {
+        "de": "Weingummi Mix",
+        "en": "wine gum Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-18.jpg?v=1623756672",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Englisches Weingummi",
+        "Clowns",
+        "Schlümpfe",
+        "Colaflaschen",
+        "Kirschen",
+        "Saure Zungen",
+        "Him- und Brombeeren",
+        "Weiße Mäuse"
+      ],
+      "purchased": "62",
+      "isInStock": true
+    },
+    {
+      "slug": "super-sour",
+      "name": {
+        "de": "Super Saurer Mix",
+        "en": "super sour Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-15.jpg?v=1623755733",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Saure Brixx",
+        "Saure Kirschcolaflaschen",
+        "Saure Stäbchen",
+        "Saure Zungen",
+        "Saure Schnuller",
+        "Saure Krokodile",
+        "Saures Wunderland",
+        "Saure Bärchen"
+      ],
+      "purchased": "947",
+      "isInStock": true
+    },
+    {
+      "slug": "harte-weingummi",
+      "name": {
+        "de": "Harter Weingummi Mix",
+        "en": "chewie Winegummi Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-16.jpg?v=1623756076",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Fruchtkracher",
+        "Colakracher",
+        "Riesensmiley",
+        "Schuhe",
+        "Saure Stäbchen",
+        "Schnuller",
+        "Clowns",
+        "Saure Zungen"
+      ],
+      "purchased": "547",
+      "isInStock": true
+    },
+    {
+      "slug": "obstkorb",
+      "name": {
+        "de": "Bunter Obstkorb",
+        "en": "Fruity Basket"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-110Kopie.jpg?v=1623755545",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Bananen",
+        "Him- und Brombeeren",
+        "Erdbeeren",
+        "Wilde Erdbeeren",
+        "Pfirsiche",
+        "Kirschen"
+      ],
+      "purchased": "347",
+      "isInStock": true
+    },
+    {
+      "slug": "weiche-lakritz",
+      "name": {
+        "de": "Weicher Lakritz Mix",
+        "en": "soft licorice"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-22.jpg?v=1623756486",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Goed",
+        "Salzbrezeln",
+        "Magic Sticks",
+        "DZ Dreiecke",
+        "Konfektstangen",
+        "Manneken Pis"
+      ],
+      "purchased": "247",
+      "isInStock": true
+    },
+    {
+      "slug": "veggie-mix-1",
+      "name": {
+        "de": "Only Veggie Mix 1",
+        "en": "Only Veggie Mix 1"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/WundertuteVeggie.jpg?v=1627851984",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["10,90", "5,90", "14,90"],
+      "price-per-g": ["2,18", "2,36", "2,19"],
+      "isVegan": true,
+      "contains": [
+        "wilde Erdbeeren",
+        "Schlümpfe",
+        "Salinos",
+        "Kirschcolaflaschen",
+        "Lakritzschnecken",
+        "Youghurt Gums",
+        "Salzige Heringe"
+      ],
+      "purchased": "37",
+      "isInStock": true
+    },
+    {
+      "slug": "veggie-mix-2",
+      "name": {
+        "de": "Only Veggie Mix 2",
+        "en": "Only Veggie Mix 2"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/WundertuteVeggie2.jpg?v=1627852007",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["10,90", "5,90", "14,90"],
+      "price-per-g": ["2,18", "2,36", "2,19"],
+      "isVegan": true,
+      "contains": [
+        "Saures Wunderland",
+        "Saure Krokodile",
+        "Fruchtmix",
+        "Fred Ferkel",
+        "Ingwer Bärchen",
+        "Mango Bärchen",
+        "Grünohrhasen"
+      ],
+      "purchased": "37",
+      "isInStock": true
+    },
+    {
+      "slug": "weiche-weingummi",
+      "name": {
+        "de": "Weicher Weingummi Mix",
+        "en": "soft winegummy Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-14.jpg?v=1623756198",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Weiße Mäuse",
+        "Schaumfrösche",
+        "Colaflaschen",
+        "Kirschen",
+        "Fred Ferkel",
+        "Grünohrhasen",
+        "Kirsch Herzen"
+      ],
+      "purchased": "647",
+      "isInStock": true
+    },
+    {
+      "slug": "harte-lakritz",
+      "name": {
+        "de": "Harter Lakritz Mix",
+        "en": "chewie licorice Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-14.jpg?v=1623756198",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Lakritz Coins",
+        "DZ Taler",
+        "DZ Briketts",
+        "Salzdiamanten",
+        "Schwarz Weiße Kugeln",
+        "Violas",
+        "Salmiak Rocks"
+      ],
+      "purchased": "446",
+      "isInStock": true
+    },
+    {
+      "slug": "classic-mix",
+      "name": {
+        "de": "Wilde Klassiker Mix",
+        "en": "classic wild Mix"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-21.jpg?v=1623757869",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": false,
+      "contains": [
+        "Colaflaschen",
+        "Weiße Mäuse",
+        "Schlümpfe",
+        "Pfirsiche",
+        "Englisches Weingummi",
+        "Lakritzschnecken",
+        "Konfekt Stangen",
+        "Salzdiamanten"
+      ],
+      "purchased": "821",
+      "isInStock": true
+    },
+    {
+      "slug": "veggie-mix-3",
+      "name": {
+        "de": "Only Veggie Mix 3",
+        "en": "Only Veggie Mix 3"
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/veganerMix.jpg?v=1634571868",
+      "weight": ["500g", "250g", "800g"],
+      "price": ["9,90", "4,90", "14,90"],
+      "price-per-g": ["1,98", "1,96", "1,86"],
+      "isVegan": true,
+      "contains": [
+        "High Fives",
+        "Drachenzungen",
+        "saure Hitchies",
+        "saure Colaflaschen",
+        "???",
+        "???",
+        "???"
+      ],
+      "purchased": "0",
+      "isInStock": false
+    }
+  ],
+  "items": [
+    {
+      "slug": "brauseplattchen",
+      "name": {
+        "de": "Fizzy Tabs",
+        "en": "Brauseplättchen"
+      },
+      "description": "Saure Brausetalker, ein erfrischend prickelnder Genuss",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/BrauseplattchenKopie.jpg?v=1634574572",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Brause.jpg?v=1634574572"
+      },
+      "weight": "3",
+      "price": "0,11",
+      "isVegan": true,
+      "tags": ["fizzy", "vegan", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "nimm2-sterne",
+      "name": {
+        "de": "Nimm2 Sterne",
+        "en": "Nimm2 Stars"
+      },
+      "description": "Da oben leuchten die Sterne, hier unten schmecken sie gut",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Sterne.jpg?v=1634574184",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Sterne_3a464f2d-e34a-4af4-b05f-0afc3322940d.jpg?v=1634574186"
+      },
+      "weight": "1",
+      "price": "0,14",
+      "vegan": true,
+      "tags": ["winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "5"
+    },
+    {
+      "slug": "high-five",
+      "name": {
+        "de": "High Five",
+        "en": "High Five"
+      },
+      "description": "Für diese einmaligen Momente, am besten mit Freunden genießen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Hande_d42814df-c7e8-4bc6-b1b1-e5eb67b6a707.jpg?v=1634574113",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Hande.jpg?v=1634574113"
+      },
+      "weight": "3",
+      "price": "0,14",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "pandas",
+      "name": {
+        "de": "pandas",
+        "en": "pandas"
+      },
+      "description": "Die perfekte Mischung aus Schaumgummi und Lakrize",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/pandas.jpg?v=1634574543",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Pandas_1201b94a-14e3-4c40-b4ae-dbe7819afe63.jpg?v=1634574543"
+      },
+      "weight": "4",
+      "price": "0,21",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "brausepommes",
+      "name": {
+        "de": "brausepommes",
+        "en": "fizzy fries"
+      },
+      "description": "Sauer und klein, die haun rein!",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Brausepommes.jpg?v=1634574040",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Brausepommes_70862ada-7d77-44bb-95a5-3101c0054d1d.jpg?v=1634574040"
+      },
+      "weight": "3",
+      "price": "0,16",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "fizzy", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "saure-krokodile",
+      "name": {
+        "de": "Saure Krokodile",
+        "en": "sour Aligators"
+      },
+      "description": "Vorsicht bissig!",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/KrokodileKopie.jpg?v=1627766520",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-59.jpg?v=1627766520"
+      },
+      "weight": "16.3",
+      "price": "0,30",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "2",
+      "options": ["🌈", "red", "orange", "yellow"]
+    },
+    {
+      "slug": "tropenfrucht",
+      "name": {
+        "de": "Tropenfrüchte",
+        "en": "Tropical Fruitsalad"
+      },
+      "description": "Weiche Tropenfrüchte von Katjes",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/TropicalKopie.jpg?v=1627832586",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Tropfical.jpg?v=1627832586"
+      },
+      "weight": "10.5",
+      "price": "0,18",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "fruity", "soft"],
+      "isInStock": true,
+      "minimum": "2",
+      "options": ["🌈", "red", "orange", "yellow", "green", "white"]
+    },
+    {
+      "slug": "saure-stabchen",
+      "name": {
+        "de": "Saure Stäbchen",
+        "en": "sour Brixx"
+      },
+      "description": "Mittelhartes saures Weingummi verschiedenen Geschmacksrichtungen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/saureStabchenKopie.jpg?v=1627766822",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-08-zoom.jpg?v=1627766822"
+      },
+      "weight": "10.7",
+      "price": "0,15",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "fruity", "soft"],
+      "isInStock": true,
+      "minimum": "5",
+      "options": ["🌈", "orange", "yellow", "green", "lila"]
+    },
+    {
+      "slug": "saure-drachenzungen",
+      "name": {
+        "de": "saure Drachenzungen",
+        "en": "sour Dragontounge"
+      },
+      "description": "super sauer, auch gut zum lutschen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/drachenzunge.jpg?v=1634573992",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Drachenzungen.jpg?v=1634573993"
+      },
+      "weight": "7",
+      "price": "0,25",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "fizzy", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "1"
+    },
+    {
+      "slug": "saure-kirschen",
+      "name": {
+        "de": "saure Kirschen",
+        "en": "sour Cherries"
+      },
+      "description": "saures Weingummi mit Kirschgeschmack",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/saureKirschenKopie.jpg?v=1627766376",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-04-zoom.jpg?v=1627766376"
+      },
+      "weight": "17.8",
+      "price": "0,24",
+      "isVegan": false,
+      "tags": ["winegum", "fizzy", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "1"
+    },
+    {
+      "slug": "saure-zungen",
+      "name": {
+        "de": "saure Zungen",
+        "en": "sour Tounges"
+      },
+      "description": "sauer frech und fröhlich",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/langeZungenKopie.jpg?v=1627763399",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-06_24dff9aa-e440-4e93-99ef-4cd9f974ab27.jpg?v=1627763399"
+      },
+      "weight": "23",
+      "price": "0,32",
+      "isVegan": false,
+      "tags": ["winegum", "fizzy", "sour", "hard"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "saure-hitchies",
+      "name": {
+        "de": "saure Hitchies",
+        "en": "sour Hitchies"
+      },
+      "description": "Saure Hitschies für zwischendurch",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Hitschies.jpg?v=1634573947",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/hitschies_3140bbd4-2893-45ba-81ba-fd2dc290a748.jpg?v=1634573947"
+      },
+      "weight": "3",
+      "price": "0,08",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "sour", "soft"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "saure-colaflaschen",
+      "name": {
+        "de": "saure Colaflaschen",
+        "en": "sour Cokebottles"
+      },
+      "description": "Die prickelnden Geschwister des Klassikers",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/saureColaflaschen.jpg?v=1634573897",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/saureColaflaschen_f015b2f3-ceb3-40ea-a4ea-1f5cdd0852e6.jpg?v=1634573897"
+      },
+      "weight": "3",
+      "price": "0,11",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "sour", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "saure-revolver",
+      "name": {
+        "de": "saure Revolver",
+        "en": "sour Bricks"
+      },
+      "description": "prickeln schneller als ihr Schatten",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SaureBricksKopie.jpg?v=1627766107",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-03_6857fe6a-104e-4ee8-aa8d-0564704d80ad.jpg?v=1627766107"
+      },
+      "weight": "16.8",
+      "price": "0,28",
+      "isVegan": false,
+      "tags": ["winegum", "sour", "soft"],
+      "isInStock": true,
+      "minimum": "2",
+      "options": ["🌈", "red", "brown", "green", "yellow"]
+    },
+    {
+      "slug": "saure-apfelkracher",
+      "name": {
+        "de": "saure Apfelkracher",
+        "en": "sour Applebombs"
+      },
+      "description": "Außen grün, innen weich. Der Brausekern kann mitgegessen werden ☺️",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SaureKracherKopie.jpg?v=1627764984",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-02_41b109bd-5e9b-4bef-9118-7625b17aea35.jpg?v=1627764984"
+      },
+      "weight": "9.9",
+      "price": "0,16",
+      "isVegan": false,
+      "tags": ["winegum", "sour", "hard", "fizzy"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "berries",
+      "name": {
+        "de": "Berries",
+        "en": "Berries"
+      },
+      "description": "",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/BerrysKopie.jpg?v=1627747811",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-61.jpg?v=1627747811"
+      },
+      "weight": "8,7",
+      "price": "0,22",
+      "isVegan": true,
+      "tags": ["winegum", "vegan", "sour", "hard", "fizzy"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "ocean-drops",
+      "name": {
+        "de": "Ocean Drops",
+        "en": "Ocean Drops"
+      },
+      "description": "Junge Lakritz Seepferdchen, frisch aus den Tiefen des Meeres",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/OceanDropKopie.jpg?v=1627764194",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-13_1ae1bddf-9a58-41d9-a78e-2c6d15bb170d.jpg?v=1627764194"
+      },
+      "weight": "7.65",
+      "price": "0,18",
+      "isVegan": false,
+      "tags": ["licorice", "soft"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "goed-zout",
+      "name": {
+        "de": "Goed Zout",
+        "en": "Goed Zout"
+      },
+      "description": "Die geballte Ladung Lakritz zum kauen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/GoedeZoutKopie.jpg?v=1627762700",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/GoedeZout.jpg?v=1627762744"
+      },
+      "weight": "11,7",
+      "price": "0,24",
+      "isVegan": false,
+      "tags": ["salty", "licorice", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "salzige-heringe",
+      "name": {
+        "de": "Salzinge Heringe",
+        "en": "salted Herrings"
+      },
+      "description": "Lakritz, mit einer Priese Meereslust",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SalzheringeKopie.jpg?v=1627764924",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-60.jpg?v=1627764924"
+      },
+      "weight": "14,1",
+      "price": "0,24",
+      "isVegan": true,
+      "tags": ["salty", "licorice", "soft", "vegan"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "knoterich",
+      "name": {
+        "de": "Knöterich",
+        "en": "Licorice knots"
+      },
+      "description": "Zerbeiße diese gordischen Knoten",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-72.jpg?v=1623063735",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-72_48812b45-c7f5-4794-8d54-bf1bf8ad893b.jpg?v=1624392795"
+      },
+      "weight": "9,2",
+      "price": "0,18",
+      "isVegan": false,
+      "tags": ["salty", "licorice", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "ingwerbaren",
+      "name": {
+        "de": "Ingwerbären",
+        "en": "Gingerbears"
+      },
+      "description": "Die besondere Note des Ingwers macht diese Gummibärchen zu einem besonderen Erlebnis",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/IngwerbarenKopie.jpg?v=1627851220",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-05.jpg?v=1627851220"
+      },
+      "weight": "9,7",
+      "price": "0,22",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "grunohrhasen",
+      "name": {
+        "de": "Grünohrhasen",
+        "en": "Greenear Rabbids"
+      },
+      "description": "Futter sie auf bevor sie weghoppeln",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/GrunohrHasenKopie.jpg?v=1627762820",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-58.jpg?v=1627762820"
+      },
+      "weight": "14.6",
+      "price": "0,32",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "wunderland",
+      "name": {
+        "de": "Saures Wunderland",
+        "en": "sour Delights"
+      },
+      "description": "Bunt und sauer, jeder biss ein Genuss",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Wunderland.jpg?v=1633784801",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-62.jpg?v=1633784801"
+      },
+      "weight": "10.1",
+      "price": "0,16",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft", "sour"],
+      "isInStock": true,
+      "minimum": "2",
+      "options": ["🌈", "red", "purple", "orange", "yellow", "green"]
+    },
+    {
+      "slug": "gelbe-baren",
+      "name": {
+        "de": "Mangobärchen",
+        "en": "Mangobears"
+      },
+      "description": "Der intensive Geschmack der Mango in zarten Gummibärchen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/IngwerbarenKopie.jpg?v=1627851220",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-05.jpg?v=1627851220"
+      },
+      "weight": "9,7",
+      "price": "0,22",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft", "fruity"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "yoghurt-gums",
+      "name": {
+        "de": "Youghurt Gums",
+        "en": "Youghurt Gums"
+      },
+      "description": "weich und cremig",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/YoghurtGumsKopie.jpg?v=1627768535",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-55.jpg?v=1627768535"
+      },
+      "weight": "14,9",
+      "price": "0,24",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft", "creamy"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "fred-ferkel",
+      "name": {
+        "de": "Fred Ferkel",
+        "en": "Piglets"
+      },
+      "description": "Süß und lecker",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/FredFerkelKopie.jpg?v=1627761812",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-57_6c0b0d31-0bd2-4d60-b83a-a42e4bb0b890.jpg?v=1627761812"
+      },
+      "weight": "16.6",
+      "price": "0,28",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "herzen",
+      "name": {
+        "de": "Kirsch Herzen",
+        "en": "Cherry Hearts"
+      },
+      "description": "Mit viel Liebe zubereitet",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/KirschherzenVKopie.jpg?v=1627763111",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-11-zoom.jpg?v=1627763111"
+      },
+      "weight": "10",
+      "price": "0,25",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "5"
+    },
+    {
+      "slug": "kirschen",
+      "name": {
+        "de": "Kirschen ",
+        "en": "Cherries"
+      },
+      "description": "Mit viel Liebe zubereitet",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Kirschen2_6904ea66-b811-4b33-9ee4-bb72bd53cc66.jpg?v=1633984574",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Kirschen2.jpg?v=1633984574"
+      },
+      "weight": "17",
+      "price": "0,24",
+      "isVegan": false,
+      "tags": ["sweet", "winegum", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "fruitmix",
+      "name": {
+        "de": "Fruchtmischung",
+        "en": "Fruitmix"
+      },
+      "description": "Bunte Fruchtmischung für jeden Geschmack",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/FruchtmixKopie.jpg?v=1627762027",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-12-zoom.jpg?v=1627762027"
+      },
+      "weight": "7.65",
+      "price": "0,18",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "3",
+      "options": ["🌈", "red", "white", "yellow"]
+    },
+    {
+      "slug": "gummibaren",
+      "name": {
+        "de": "Gummibären",
+        "en": "Gummibears"
+      },
+      "description": "Bouncing here and there and everywhere",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/GummibarenKopie.jpg?v=1627762869",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-27-zoom.jpg?v=1627762869"
+      },
+      "weight": "9.45",
+      "price": "0,15",
+      "isVegan": false,
+      "tags": ["sweet", "winegum", "soft"],
+      "isInStock": true,
+      "minimum": "3",
+      "options": ["🌈", "red", "orange", "yellow", "white", "teal", "green"]
+    },
+    {
+      "slug": "saure-barchen",
+      "name": {
+        "de": "Saure Bärchen",
+        "en": "sour Gummibears"
+      },
+      "description": "Die sauren",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/saureBarchenkopie.jpg?v=1627765397",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-07-zoom.jpg?v=1627765397"
+      },
+      "weight": "10.8",
+      "price": "0,24",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "3",
+      "options": ["🌈", "white", "green", "yellow", "orange", "purple"]
+    },
+    {
+      "slug": "schuhe",
+      "name": {
+        "de": "Schuhe",
+        "en": "Shoes"
+      },
+      "description": "Harte Weingummi Schuhe",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SchuheKopie.jpg?v=1627768046",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-17Kopie_918743a1-ed1c-4545-9a00-8a343444a595.jpg?v=1627768046"
+      },
+      "weight": "12.2",
+      "price": "0,2",
+      "isVegan": true,
+      "tags": ["sweet", "winegum", "vegan", "hard"],
+      "isInStock": true,
+      "minimum": "5",
+      "options": ["🌈", "red", "green", "yellow", "orange"]
+    },
+    {
+      "slug": "stafetten",
+      "name": {
+        "de": "Staffeten",
+        "en": "Relays"
+      },
+      "description": "Glasierte Lakritzstangen",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/StafettenKopie.jpg?v=1627768452",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-70_49e254a5-99f9-4a2b-a823-1591b1e6ca2f.jpg?v=1627768452"
+      },
+      "weight": "10",
+      "price": "0,2",
+      "isVegan": false,
+      "tags": ["licorice", "sweet", "hard"],
+      "isInStock": true,
+      "minimum": "10"
+    },
+    {
+      "slug": "salmiakkugeln",
+      "name": {
+        "de": "Schwarze Salmiakkugeln",
+        "en": "Relays"
+      },
+      "description": "Glasierte Salzlakritz",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SalmiakKugelnKopie.jpg?v=1627764602",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-01-zoom.jpg?v=1627764602"
+      },
+      "weight": "10",
+      "price": "0,16",
+      "isVegan": false,
+      "tags": ["licorice", "salty", "hard"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "salinos",
+      "name": {
+        "de": "Schwarze Salmiakkugeln",
+        "en": "Relays"
+      },
+      "description": "Milder mittelharter Lakritz Klassiker",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/SalinosKopie.jpg?v=1627764559",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-25-zoom.jpg?v=1627764559"
+      },
+      "weight": "15.6",
+      "price": "0,22",
+      "isVegan": true,
+      "tags": ["licorice", "vegan", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "magic-sticks",
+      "name": {
+        "de": "Magic Sticks",
+        "en": "Magic Sticks"
+      },
+      "description": "Milder mittelharter Lakritz zur Hälfte mit Pfefferminzgeschmack",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/MagicSticksKopie.jpg?v=1627763532",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-090_f037649d-0030-437f-baf7-02504df67816.jpg?v=1627763532"
+      },
+      "weight": "13.7",
+      "price": "0,2",
+      "isVegan": false,
+      "tags": ["licorice", "soft", "mint", "sweet"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "hexenheuler",
+      "name": {
+        "de": "Hexenheuler",
+        "en": "Magic Sticks"
+      },
+      "description": "leicht salziges Lakritz mit Salmiak gefüllt, gezuckert",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/HexenheulerKopie.jpg?v=1627762910",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-28-zoom.jpg?v=1627762910"
+      },
+      "weight": "9.2",
+      "price": "0,16",
+      "isVegan": false,
+      "tags": ["licorice", "soft", "salmiak", "sweet"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "dz-taler",
+      "name": {
+        "de": "DZ Taler",
+        "en": "DZ Coin"
+      },
+      "description": "doppelt salziges Lakritz",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/DzTalerKopie.jpg?v=1627752390",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bonbon_Bude_Produktbilder-099_b33fc91a-9b07-4b3d-bf65-2e80dda6d938.jpg?v=1627752390"
+      },
+      "weight": "9.3",
+      "price": "0,15",
+      "isVegan": false,
+      "tags": ["licorice", "hard", "salty"],
+      "isInStock": true,
+      "minimum": "3"
+    },
+    {
+      "slug": "choco-fudge",
+      "name": {
+        "de": "Choco Fudge",
+        "en": "Choco Fudge"
+      },
+      "description": "Mürbes Karamell mit Schockogeschmack",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/ChocoKopie.jpg?v=1627851060",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-67_e129f587-8b1e-4083-9541-af14d2bede79.jpg?v=1627851060"
+      },
+      "weight": "13.9",
+      "price": "0,21",
+      "isVegan": false,
+      "tags": ["sweet", "Karamell", "soft"],
+      "isInStock": true,
+      "minimum": "2"
+    },
+    {
+      "slug": "coffee-fudge",
+      "name": {
+        "de": "Caffee Fudge",
+        "en": "Coffee Fudge"
+      },
+      "description": "Mürbes Karamell mit Kaffeegeschmack",
+      "image": {
+        "big": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/CoffeeKopie_6a93caa9-ea8b-4850-a3b4-7597a094c66d.jpg?v=1627851215",
+        "small": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys_Bon-Bon-Bude-66_2b6936e3-8bc0-4cbc-abae-8708c6cda6af.jpg?v=1627851215"
+      },
+      "weight": "14.1",
+      "price": "0,21",
+      "isVegan": true,
+      "tags": ["sweet", "Karamell", "soft", "vegan"],
+      "isInStock": true,
+      "minimum": "2"
+    }
+  ]
+}
