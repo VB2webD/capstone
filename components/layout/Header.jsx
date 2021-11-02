@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 4rem;
+  height: var(--header-height);
   z-index: 1;
   display: flex;
   justify-content: center;

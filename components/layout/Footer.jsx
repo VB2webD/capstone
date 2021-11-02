@@ -27,7 +27,7 @@ const StyledFooter = styled.ul`
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 4rem;
+  height: var(--footer-height);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,4 +36,11 @@ const StyledFooter = styled.ul`
   padding: 0;
   margin: 0;
   z-index: 1;
+  a {
+    width: var(--footer-link-width);
+    border: 1px solid white;
+    text-align:center;
+    line-height: calc(var(--footer-height) * 0.9);
+    height: calc(var(--footer-height) * 0.95);
+  }
 `;

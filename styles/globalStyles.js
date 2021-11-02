@@ -2,7 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 const globalStyles = createGlobalStyle`
 :root{
+  // Layout sizing
+  --header-height: 4rem;
+  --footer-height: 4rem;
+  --footer-link-width: calc(25vw * 0.95);
+  // Colors:
   --bg-color: hotpink;
+  --bg-main-color: lightgrey;
 }
 html,
 body {
