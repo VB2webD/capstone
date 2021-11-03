@@ -8,7 +8,7 @@ const Layout = ({ hasFooter, title, children }) => {
   return (
     <>
       <Header title={title} />
-      <StyledMain hasFooter={hasFooter}>{children} </StyledMain>
+      <StyledMain hasFooter>{children}</StyledMain>
       {hasFooter ? <Footer /> : null}
     </>
   );
