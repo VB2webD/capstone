@@ -3,12 +3,12 @@ import React from "react";
 import Header from "./Header";
 import { Footer } from "./Footer";
 
-const Layout = ({ isVisible, title, children }) => {
+const Layout = ({ isVisible, isCurrent, title, children }) => {
   return (
     <>
       <Header title={title} />
       <StyledMain>{children}</StyledMain>
-      <Footer isVisible={isVisible} />
+      <Footer isVisible={isVisible} isCurrent={isCurrent} />
     </>
   );
 };

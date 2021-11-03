@@ -1,24 +1,23 @@
 import React from "react";
-import Link from "next/link";
 import styled from "styled-components";
-import { useRouter } from "next/dist/client/router";
+import ActiveLink from "./ActiveLink";
 
 export function Footer({ isVisible }) {
   const show = isVisible;
   return (
     <StyledFooter>
-      <Link href="/specials">
+      <ActiveLink href="/specials" activeClassName="current">
         <a>Specials</a>
-      </Link>
-      <Link href="/shop">
+      </ActiveLink>
+      <ActiveLink href="/shop" activeClassName="current">
         <a>Shop</a>
-      </Link>
-      <Link href="/favourites">
+      </ActiveLink>
+      <ActiveLink href="/favourites" activeClassName="current">
         <a>Favourites</a>
-      </Link>
-      <Link href="/checkout">
+      </ActiveLink>
+      <ActiveLink href="/checkout" activeClassName="current">
         <a>Checkout</a>
-      </Link>
+      </ActiveLink>
     </StyledFooter>
   );
 }
@@ -36,10 +35,15 @@ const StyledFooter = styled.ul`
   padding: 0;
   margin: 0;
   z-index: 1;
+
+  .current {
+    background-color: var(--bg-color-nav-current);
+    border: 1px solid white;
+  }
+
   a {
     width: var(--footer-link-width);
-    border: 1px solid white;
-    text-align:center;
+    text-align: center;
     line-height: calc(var(--footer-height) * 0.9);
     height: calc(var(--footer-height) * 0.95);
   }

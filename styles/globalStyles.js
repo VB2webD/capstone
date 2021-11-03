@@ -7,8 +7,9 @@ const globalStyles = createGlobalStyle`
   --footer-height: 4rem;
   --footer-link-width: calc(25vw * 0.95);
   // Colors:
-  --bg-color: hotpink;
-  --bg-main-color: lightgrey;
+  --bg-color-nav: rgb(250,250,250);
+  --bg-color-nav-current: rgb(220,220,250);
+  --bg-main-color: rgb(248, 240, 252);
 }
 html,
 body {
