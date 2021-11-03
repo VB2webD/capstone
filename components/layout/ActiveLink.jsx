@@ -1,7 +1,8 @@
 import React, { Children } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import PropTypes from "prop-types";
+
+//used to highlight current page link in Nav Bar
 
 const ActiveLink = ({ children, activeClassName, ...props }) => {
   const { asPath } = useRouter();
@@ -12,6 +13,7 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
     asPath === props.href || asPath === props.as
       ? `${childClassName} ${activeClassName}`.trim()
       : childClassName;
+
   return (
     <Link {...props}>
       {React.cloneElement(child, {
@@ -19,10 +21,6 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
       })}
     </Link>
   );
-};
-
-ActiveLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
 };
 
 export default ActiveLink;

@@ -3,7 +3,7 @@ import Layout from "../components/layout/Layout";
 
 export default function Home() {
   return (
-    <Layout title={"Index"} isVisible={true}>
+    <Layout title={"Index"} hasFooter={true}>
       <h1>Hello World</h1>
     </Layout>
   );

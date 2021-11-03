@@ -3,20 +3,23 @@ import React from "react";
 import Header from "./Header";
 import { Footer } from "./Footer";
 
-const Layout = ({ isVisible, isCurrent, title, children }) => {
+const Layout = ({ hasFooter, title, children }) => {
+  console.log(hasFooter);
   return (
     <>
       <Header title={title} />
-      <StyledMain>{children}</StyledMain>
-      <Footer isVisible={isVisible} isCurrent={isCurrent} />
+      <StyledMain hasFooter={hasFooter}>{children} </StyledMain>
+      {hasFooter ? <Footer /> : null}
     </>
   );
 };
+
 export default Layout;
+
 const StyledMain = styled.main`
   position: absolute;
   top: var(--header-height);
-  bottom: var(--footer-height);
+  bottom: ${(props) => (props.hasFooter ? "var(--footer-height)" : 0)};
   width: 100vw;
   margin: 1vw, 0;
   padding: 0 1vw;
