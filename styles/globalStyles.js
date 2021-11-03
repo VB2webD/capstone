@@ -6,10 +6,12 @@ const globalStyles = createGlobalStyle`
   --header-height: 4rem;
   --footer-height: 4rem;
   --footer-link-width: calc(25vw * 0.95);
-  // Colors:
-  --bg-color-nav: rgb(250,250,250);
-  --bg-color-nav-current: rgb(220,220,250);
-  --bg-main-color: rgb(248, 240, 252);
+  // Colors: Theme main
+  --cta-color-main: rgb(121, 194, 178);
+  --cta-color-main-active: rgb(162, 221, 209);
+  --bg-color-main-dark: rgb(220,220,250);
+  --bg-color-main-light: rgb(248, 240, 252);
+  --bg-color-main-white: rgb(250,250,250);
 }
 html,
 body {

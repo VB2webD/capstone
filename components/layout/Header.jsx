@@ -21,5 +21,5 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-main-white);
 `;

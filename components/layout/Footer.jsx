@@ -31,14 +31,14 @@ const StyledFooter = styled.ul`
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid black;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-white);
   padding: 0;
   margin: 0;
   z-index: 1;
 
   .current {
-    background-color: var(--bg-color-nav-current);
-    border: 1px solid white;
+    background-color: white;
+    border: 3px solid var(--cta-color-main);
   }
 
   a {
@@ -46,5 +46,8 @@ const StyledFooter = styled.ul`
     text-align: center;
     line-height: calc(var(--footer-height) * 0.9);
     height: calc(var(--footer-height) * 0.95);
+    &:hover {
+      background-color: var(--cta-color-main-active);
+    }
   }
 `;

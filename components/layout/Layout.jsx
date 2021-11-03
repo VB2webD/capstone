@@ -22,5 +22,5 @@ const StyledMain = styled.main`
   padding: 0 1vw;
   line-break: normal;
   z-index: 1;
-  background-color: var(--bg-main-color);
+  background-color: var(--bg-color-main-light);
 `;
