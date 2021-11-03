@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout";
 const Specials = () => {
   return (
     <>
-      <Layout title={"Specials"} hasFooter={true}>
+      <Layout title="Specials" hasFooter>
         <h1>Hello World</h1>
       </Layout>
     </>
