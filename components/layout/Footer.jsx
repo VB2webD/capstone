@@ -4,7 +4,7 @@ import ActiveLink from "./ActiveLink";
 
 export function Footer() {
   return (
-    <StyledFooter >
+    <StyledFooter>
       <ActiveLink href="/specials" activeClassName="active">
         <a>Specials</a>
       </ActiveLink>
@@ -21,7 +21,7 @@ export function Footer() {
   );
 }
 
-const StyledFooter = styled.ul`
+const StyledFooter = styled.footer`
   position: fixed;
   display: flex;
   width: 100vw;
@@ -37,14 +37,14 @@ const StyledFooter = styled.ul`
 
   .active {
     background-color: var(--bg-color-main-white);
-    border: 3px solid var(--cta-color-main);
+    color: var(--cta-color-main);
   }
 
   a {
     width: var(--footer-link-width);
+    height: var(--footer-height);
     text-align: center;
-    line-height: calc(var(--footer-height) * 0.9);
-    height: calc(var(--footer-height) * 0.95);
+    padding-top: 1.3rem;
 
     &:hover {
       background-color: var(--cta-color-main-active);
