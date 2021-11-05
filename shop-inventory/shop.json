@@ -7,9 +7,6 @@
         "en": "wine gum Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-18.jpg?v=1623756672",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Englisches Weingummi",
@@ -21,8 +18,28 @@
         "Him- und Brombeeren",
         "Weiße Mäuse"
       ],
-      "purchased": "62",
-      "isInStock": true
+      "purchased": 62,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "super-sour",
@@ -31,9 +48,6 @@
         "en": "super sour Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-15.jpg?v=1623755733",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Saure Brixx",
@@ -45,8 +59,28 @@
         "Saures Wunderland",
         "Saure Bärchen"
       ],
-      "purchased": "947",
-      "isInStock": true
+      "purchased": 947,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "harte-weingummi",
@@ -55,9 +89,6 @@
         "en": "chewie Winegummi Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-16.jpg?v=1623756076",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Fruchtkracher",
@@ -69,8 +100,28 @@
         "Clowns",
         "Saure Zungen"
       ],
-      "purchased": "547",
-      "isInStock": true
+      "purchased": 547,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "obstkorb",
@@ -79,9 +130,6 @@
         "en": "Fruity Basket"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-110Kopie.jpg?v=1623755545",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Bananen",
@@ -91,19 +139,36 @@
         "Pfirsiche",
         "Kirschen"
       ],
-      "purchased": "347",
-      "isInStock": true
+      "purchased": 347,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "weiche-lakritz",
       "name": {
         "de": "Weicher Lakritz Mix",
-        "en": "soft licorice"
+        "en": "soft licorice Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-22.jpg?v=1623756486",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Goed",
@@ -113,8 +178,28 @@
         "Konfektstangen",
         "Manneken Pis"
       ],
-      "purchased": "247",
-      "isInStock": true
+      "purchased": 247,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "veggie-mix-1",
@@ -123,9 +208,6 @@
         "en": "Only Veggie Mix 1"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/WundertuteVeggie.jpg?v=1627851984",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["10,90", "5,90", "14,90"],
-      "price-per-g": ["2,18", "2,36", "2,19"],
       "isVegan": true,
       "contains": [
         "wilde Erdbeeren",
@@ -136,8 +218,28 @@
         "Youghurt Gums",
         "Salzige Heringe"
       ],
-      "purchased": "37",
-      "isInStock": true
+      "purchased": 37,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "veggie-mix-2",
@@ -146,9 +248,6 @@
         "en": "Only Veggie Mix 2"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/WundertuteVeggie2.jpg?v=1627852007",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["10,90", "5,90", "14,90"],
-      "price-per-g": ["2,18", "2,36", "2,19"],
       "isVegan": true,
       "contains": [
         "Saures Wunderland",
@@ -159,8 +258,28 @@
         "Mango Bärchen",
         "Grünohrhasen"
       ],
-      "purchased": "37",
-      "isInStock": true
+      "purchased": 37,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "weiche-weingummi",
@@ -169,9 +288,6 @@
         "en": "soft winegummy Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-14.jpg?v=1623756198",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Weiße Mäuse",
@@ -182,8 +298,28 @@
         "Grünohrhasen",
         "Kirsch Herzen"
       ],
-      "purchased": "647",
-      "isInStock": true
+      "purchased": 647,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "harte-lakritz",
@@ -192,9 +328,6 @@
         "en": "chewie licorice Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-14.jpg?v=1623756198",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Lakritz Coins",
@@ -205,8 +338,28 @@
         "Violas",
         "Salmiak Rocks"
       ],
-      "purchased": "446",
-      "isInStock": true
+      "purchased": 446,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "classic-mix",
@@ -215,9 +368,6 @@
         "en": "classic wild Mix"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/Frankys-Bonbon-Bude-21.jpg?v=1623757869",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": false,
       "contains": [
         "Colaflaschen",
@@ -229,8 +379,28 @@
         "Konfekt Stangen",
         "Salzdiamanten"
       ],
-      "purchased": "821",
-      "isInStock": true
+      "purchased": 821,
+      "isInStock": true,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     },
     {
       "slug": "veggie-mix-3",
@@ -239,9 +409,6 @@
         "en": "Only Veggie Mix 3"
       },
       "image": "https://cdn.shopify.com/s/files/1/0396/9305/8209/products/veganerMix.jpg?v=1634571868",
-      "weight": ["500g", "250g", "800g"],
-      "price": ["9,90", "4,90", "14,90"],
-      "price-per-g": ["1,98", "1,96", "1,86"],
       "isVegan": true,
       "contains": [
         "High Fives",
@@ -252,8 +419,28 @@
         "???",
         "???"
       ],
-      "purchased": "0",
-      "isInStock": false
+      "purchased": 0,
+      "isInStock": false,
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Standart Tüte",
+          "weight": 500,
+          "price": 9.9
+        },
+        {
+          "id": "small",
+          "name": "kleine Tüte",
+          "weight": 250,
+          "price": 4.9
+        },
+        {
+          "id": "large",
+          "name": "Große Tüte",
+          "weight": 800,
+          "price": 14.9
+        }
+      ]
     }
   ],
   "items": [
