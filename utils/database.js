@@ -1,3 +1,9 @@
 import { MongoClient } from "mongodb";
 
-export const client = new MongoClient(process.env.dbAccess);
+const options = {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+}
+const client = new MongoClient(process.env.dbAccess, options);
+
+export default client;
