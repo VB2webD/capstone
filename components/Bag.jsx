@@ -10,7 +10,7 @@ const Bag = ({ name, image, isVegan, variants }) => {
         width={250}
         height={375}
         alt={`Prepackaged sweet mix: ${name}`}
-      ></Image>
+      />
       <span>{name}</span>
       <span>Ab: {variants[1].price}€</span>
       <span>
