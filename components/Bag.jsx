@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-const Bag = ({ name, image, isVegan }) => {
+const Bag = ({ name, image, isVegan, variants }) => {
   return (
     <StyledBag>
       <Image
@@ -12,6 +12,10 @@ const Bag = ({ name, image, isVegan }) => {
         alt={`Prepackaged sweet mix: ${name}`}
       ></Image>
       <span>{name}</span>
+      <span>Ab: {variants[1].price}€</span>
+      <span>
+        {((variants[1].price / variants[1].weight) * 100).toFixed(2)}€/100g
+      </span>
       <checkbox checked={isVegan} />
     </StyledBag>
   );
