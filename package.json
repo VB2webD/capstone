@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest --watch --testPathPattern=__tests__",
     "cypress": "cypress open",
-    "json": "json-server --watch -p 3333 shop-inventory/shop.json"
+
   },
   "dependencies": {
     "mongodb": "^4.1.4",
@@ -28,7 +28,6 @@
     "eslint-config-next": "12.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.3.1",
-    "json-server": "^0.17.0",
     "react-test-renderer": "^17.0.2"
   }
 }
