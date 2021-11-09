@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch --testPathPattern=__tests__",
-    "cypress": "cypress open",
+    "cypress": "cypress open"
 
   },
   "dependencies": {
