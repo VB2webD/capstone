@@ -2,10 +2,8 @@ import styled from "styled-components";
 import React from "react";
 import Header from "./Header";
 import { Footer } from "./Footer";
-import ShoppingCart from "../ShoppingCart";
 
 const Layout = ({ hasCart, hasFooter, title, children }) => {
-  console.log(hasFooter);
   return (
     <>
       <Header title={title} hasCart={hasCart} />
@@ -25,6 +23,6 @@ const StyledMain = styled.main`
   margin: 1vw, 0;
   padding: 0 1vw;
   line-break: normal;
-  z-index: 1;
+  z-index: 0;
   background-color: var(--bg-color-main-light);
 `;

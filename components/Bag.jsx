@@ -19,8 +19,7 @@ const Bag = ({ name, image, isVegan, variants }) => {
         {variants[1].weight
           ? numberFormat.format(
               ((variants[1].price / variants[1].weight) * 100).toFixed(2)
-            )+
-        " / 100g"
+            ) + " / 100g"
           : null}
       </p>
     </StyledBag>

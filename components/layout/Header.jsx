@@ -3,7 +3,6 @@ import styled from "styled-components";
 import ShoppingCart from "../ShoppingCart";
 
 const Header = ({ title, hasCart }) => {
-  console.log("hasCart:" + hasCart);
   return (
     <StyledHeader>
       <span>{title}</span>
@@ -20,7 +19,7 @@ const StyledHeader = styled.header`
   height: var(--header-height);
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
   background-color: var(--bg-color-main-white);
