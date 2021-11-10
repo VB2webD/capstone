@@ -1,11 +1,13 @@
-import { useRouter } from "next/dist/client/router";
 import React from "react";
 import styled from "styled-components";
+import ShoppingCart from "../ShoppingCart";
 
-const Header = ({ title }) => {
+const Header = ({ title, hasCart }) => {
+  console.log("hasCart:" + hasCart);
   return (
     <StyledHeader>
       <span>{title}</span>
+      {hasCart ? <ShoppingCart /> : null}
     </StyledHeader>
   );
 };

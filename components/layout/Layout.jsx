@@ -2,12 +2,13 @@ import styled from "styled-components";
 import React from "react";
 import Header from "./Header";
 import { Footer } from "./Footer";
+import ShoppingCart from "../ShoppingCart";
 
-const Layout = ({ hasFooter, title, children }) => {
+const Layout = ({ hasCart, hasFooter, title, children }) => {
   console.log(hasFooter);
   return (
     <>
-      <Header title={title} />
+      <Header title={title} hasCart={hasCart} />
       <StyledMain hasFooter>{children}</StyledMain>
       {hasFooter ? <Footer /> : null}
     </>

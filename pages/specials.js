@@ -7,7 +7,7 @@ import getBags from "../utils/data/getBags";
 const Specials = ({ bags }) => {
   return (
     <>
-      <Layout title="Specials" hasFooter>
+      <Layout title="Specials" hasFooter hasCart>
         <h1>Hello World</h1>
         <StyledList>
           {bags.map(({ slug, image, isVegan, name, variants }) => (
