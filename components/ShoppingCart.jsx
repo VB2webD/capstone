@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import CartInventory from "./CartInventory";
+import { useCart } from "../context/ItemsInCart";
 
 const ShoppingCart = () => {
   const [open, setOpen] = useState(false);
+  const [itemsInCart, setItemsInCart] = useCart();
 
   return (
     <>
@@ -22,6 +24,7 @@ const ShoppingCart = () => {
           width={30}
           alt="Access your shopping card here"
         />
+        <StyledCounter>{itemsInCart.length}</StyledCounter>
       </StyledDiv>
       {open ? <CartInventory /> : null}
     </>
@@ -41,4 +44,19 @@ const StyledDiv = styled.div`
     vertical-align: middle;
     margin-right: 1vw;
   }
+`;
+
+const StyledCounter = styled.p`
+  color: var();
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: auto;
+  top: -5px;
+  right: 0;
+  color: white;
+  background-color: #727272;
+  border-radius: 45px;
+  text-align: center;
+  vertical-align: middle;
 `;
