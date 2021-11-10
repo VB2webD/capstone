@@ -1,20 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { useCart } from "../context/ItemsInCart";
+import CartItem from "./CartItem";
 
 const CartInventory = () => {
+  const [itemsInCart, setItemsInCart] = useCart();
   return (
     <StyledUl>
-      <li>my items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
-      <li>more items here</li>
+      {itemsInCart.map(({ name }) => (
+        <CartItem name={name} />
+      ))}
     </StyledUl>
   );
 };

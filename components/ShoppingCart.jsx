@@ -8,14 +8,15 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <StyledDiv>
-        <span>Tüte:</span>
+      <StyledDiv
+        onClick={() => {
+          setOpen(!open);
+          console.log("shoppingCard open " + open);
+        }}
+      >
+        <span>Tüte</span>
         <Image
           open={open}
-          onClick={() => {
-            setOpen(!open);
-            console.log("shoppingCard open " + open);
-          }}
           src="/../public/shoppingCart.svg"
           height={30}
           width={30}
