@@ -25,3 +25,10 @@ Ideation
 - create Layout
 - add user-story template
 - deploy on vercel
+- fake Backend for api pages (using json-server)
+- create Backend on MongoDB
+- start backend implementation
+
+## Week 2
+
+- finish Backend implementation for specials page
