@@ -14,7 +14,7 @@ const CartInventory = () => {
         ))}
       </ul>
       <Link href="/checkout">
-        <a>Buy</a>
+        <StyledLink>Buy</StyledLink>
       </Link>
     </StyledDiv>
   );
@@ -34,12 +34,24 @@ const StyledDiv = styled.div`
   width: 15vw;
   background-color: var(--bg-color-main-dark);
   list-style-type: none;
-  padding: 1%;
   margin: 0;
   overflow-y: scroll;
-  Link {
-    bottom: 0;
-    width: 100%;
-    background-color: whitesmoke;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+const StyledLink = styled.button`
+  color: white;
+  background-color: var(--cta-color-main-active);
+  border: 0;
+  width: 90%;
+  height: 2rem;
+  margin: 4%;
+
+  :hover {
+    background-color: var(--cta-color-main);
   }
 `;
