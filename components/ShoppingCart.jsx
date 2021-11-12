@@ -24,7 +24,9 @@ const ShoppingCart = () => {
           width={30}
           alt="Access your shopping card here"
         />
-        <StyledCounter>{itemsInCart.length}</StyledCounter>
+        {itemsInCart.length ? (
+          <StyledCounter>{itemsInCart.length}</StyledCounter>
+        ) : null}
       </StyledDiv>
       {open ? <CartInventory /> : null}
     </>
