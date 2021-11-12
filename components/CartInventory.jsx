@@ -10,7 +10,12 @@ const CartInventory = () => {
     <StyledDiv>
       <ul>
         {itemsInCart.map(({ name }, index) => (
-          <CartItem name={name} index={index} removeItem={removeItem} />
+          <CartItem
+            key={index}
+            name={name}
+            index={index}
+            removeItem={removeItem}
+          />
         ))}
       </ul>
       <Link href="/checkout">
