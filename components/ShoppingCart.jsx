@@ -33,17 +33,17 @@ const ShoppingCart = () => {
 
 export default ShoppingCart;
 
-/*
--------
-Styles:
--------
-*/
+/* -------
+  Styles:
+------- */
 
 const StyledDiv = styled.div`
-  span {
-    vertical-align: middle;
-    margin-right: 1vw;
-  }
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  top: 1rem;
 `;
 
 const StyledCounter = styled.p`
@@ -52,8 +52,8 @@ const StyledCounter = styled.p`
   width: 20px;
   height: 20px;
   padding: auto;
-  top: -5px;
-  right: 0;
+  top: 0;
+  right: 0.4rem;
   color: white;
   background-color: #727272;
   border-radius: 45px;

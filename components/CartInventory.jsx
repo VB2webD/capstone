@@ -2,30 +2,34 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../context/ItemsInCart";
 import CartItem from "./CartItem";
+import Link from "next/link";
 
 const CartInventory = () => {
   const [itemsInCart, setItemsInCart] = useCart();
   return (
-    <StyledUl>
-      {itemsInCart.map(({ name }) => (
-        <CartItem name={name} />
-      ))}
-    </StyledUl>
+    <StyledDiv>
+      <ul>
+        {itemsInCart.map(({ name }) => (
+          <CartItem name={name} />
+        ))}
+      </ul>
+      <Link href="/checkout">
+        <a>Buy</a>
+      </Link>
+    </StyledDiv>
   );
 };
 
 export default CartInventory;
 
-/*
--------
-Styles:
--------
-*/
+/* -------
+ Styles:
+------- */
 
-const StyledUl = styled.ul`
+const StyledDiv = styled.div`
   position: fixed;
   top: var(--header-height);
-  right: 5px;
+  right: 0;
   height: 15vh;
   width: 15vw;
   background-color: var(--bg-color-main-dark);
@@ -33,4 +37,9 @@ const StyledUl = styled.ul`
   padding: 1%;
   margin: 0;
   overflow-y: scroll;
+  Link {
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+  }
 `;

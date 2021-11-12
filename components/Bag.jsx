@@ -11,17 +11,19 @@ const Bag = ({ name, image, isVegan, variants }) => {
         height={375}
         alt={`Prepackaged sweet mix: ${name}`}
       />
-      <p>
-        {name} {isVegan ? "🌱" : null}
-      </p>
-      <p>Ab: {numberFormat.format(variants[1].price)}</p>
-      <p>
-        {variants[1].weight
-          ? numberFormat.format(
-              ((variants[1].price / variants[1].weight) * 100).toFixed(2)
-            ) + " / 100g"
-          : null}
-      </p>
+      <StyledName>
+        {name} <StyledVegan>{isVegan ? "🌱" : null}</StyledVegan>
+      </StyledName>
+      <div>
+        <p>Ab: {numberFormat.format(variants[1].price)}</p>
+        <p>
+          {variants[1].weight
+            ? numberFormat.format(
+                ((variants[1].price / variants[1].weight) * 100).toFixed(2)
+              ) + " / 100g"
+            : null}
+        </p>
+      </div>
     </StyledBag>
   );
 };
@@ -42,7 +44,19 @@ Styles:
 const StyledBag = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
   text-align: center;
+  gap: 0.5rem;
+  p {
+    margin: 0.2rem;
+    align-items: baseline;
+  }
+`;
+
+const StyledVegan = styled.p`
+  height: 25px;
+`;
+const StyledName = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 `;

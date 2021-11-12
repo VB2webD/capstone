@@ -5,22 +5,30 @@ import ShoppingCart from "../ShoppingCart";
 const Header = ({ title, hasCart }) => {
   return (
     <StyledHeader>
-      <span>{title}</span>
-      {hasCart ? <ShoppingCart /> : null}
+      <StyledFlex>
+        <StyledTitle>{title}</StyledTitle>
+        {hasCart ? <ShoppingCart /> : null}
+      </StyledFlex>
     </StyledHeader>
   );
 };
 export default Header;
 
+const StyledFlex = styled.div`
+  display: flex;
+`;
+
+const StyledTitle = styled.div`
+  position: relative;
+  left: 50%;
+  top: 1.3rem;
+`;
+
 const StyledHeader = styled.header`
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: var(--header-height);
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
   background-color: var(--bg-color-main-white);
 `;
