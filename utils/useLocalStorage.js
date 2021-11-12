@@ -1,17 +1,5 @@
 import { useEffect, useState } from "react";
 
-export const setItem = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value));
-};
-
-export const getItem = (key, defaultValue) => {
-  if (localStorage.getItem(key)) {
-    return JSON.parse(localStorage.getItem(key));
-  }
-  setItem(key, defaultValue);
-  return defaultValue;
-};
-
 export const useLocalStorageState = (key, defaultValue) => {
   const [value, setValue] = useState(defaultValue);
 
@@ -38,11 +26,13 @@ export const useLocalStorageState = (key, defaultValue) => {
     }
   }, [value, key]);
 
+  // Only works with Arr
+
   const removeValue = (index) => {
     const front = value.slice(0, index);
     const back = value.slice(index + 1, value.length - index + 1);
     setValue([...front, ...back]);
   };
 
-  return [value, setValue, removeValue];
+  return [value, setValue];
 };

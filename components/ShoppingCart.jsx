@@ -6,7 +6,7 @@ import { useCart } from "../context/ItemsInCart";
 
 const ShoppingCart = () => {
   const [open, setOpen] = useState(false);
-  const [itemsInCart, setItemsInCart] = useCart();
+  const { itemsInCart, setItemsInCart } = useCart();
 
   return (
     <>

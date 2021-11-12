@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import Bag from "../components/Bag";
 import styled from "styled-components";
-import getBags from "../utils/data/getBags";
+import { getBags } from "../utils/data/getBags";
 
 const Specials = ({ bags }) => {
   return (

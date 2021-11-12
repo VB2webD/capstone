@@ -5,7 +5,7 @@ import CartItem from "./CartItem";
 import Link from "next/link";
 
 const CartInventory = () => {
-  const [itemsInCart, setItemsInCart, removeItem] = useCart();
+  const { itemsInCart, setItemsInCart, removeItem } = useCart();
   return (
     <StyledDiv>
       <ul>
