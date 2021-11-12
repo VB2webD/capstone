@@ -37,8 +37,7 @@ const StyledList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
+  gap: 2rem;
 `;
 
 /*

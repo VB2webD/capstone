@@ -1,7 +1,12 @@
 import React from "react";
 
-const CartItem = ({ name }) => {
-  return <li>{name}</li>;
+const CartItem = ({ name, index, removeItem }) => {
+
+  return (
+    <li>
+      {name} <button onClick={() => removeItem(index)}>🗑</button>
+    </li>
+  );
 };
 
 export default CartItem;

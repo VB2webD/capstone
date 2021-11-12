@@ -15,6 +15,10 @@ const Layout = ({ hasCart, hasFooter, title, children }) => {
 
 export default Layout;
 
+/* -------
+  Styles:
+------- */
+
 const StyledMain = styled.main`
   position: absolute;
   top: var(--header-height);

@@ -1,21 +1,16 @@
 import { createContext, useContext, useState } from "react";
+import { useLocalStorageState } from "../utils/useLocalStorage";
 
 const CartContext = createContext(undefined);
 
 export function CartProvider({ children }) {
-  const [itemsInCart, setItemsInCart] = useState([
-    { name: "Brot" },
-    { name: "Salami" },
-    { name: "Eier" },
-  ]);
+  const [itemsInCart, setItemsInCart, removeItem] = useLocalStorageState(
+    "shoppingCart",
+    [{ name: "Brot" }, { name: "Salami" }, { name: "Eier" }]
+  );
 
   return (
-    <CartContext.Provider
-      value={[
-        itemsInCart,
-        setItemsInCart,
-      ]}
-    >
+    <CartContext.Provider value={[itemsInCart, setItemsInCart, removeItem]}>
       {children}
     </CartContext.Provider>
   );

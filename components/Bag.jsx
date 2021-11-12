@@ -35,11 +35,9 @@ var numberFormat = new Intl.NumberFormat("de-DE", {
   currency: "EUR",
 });
 
-/*
--------
-Styles:
--------
-*/
+/* -------
+  Styles:
+------- */
 
 const StyledBag = styled.div`
   display: flex;

@@ -5,12 +5,12 @@ import CartItem from "./CartItem";
 import Link from "next/link";
 
 const CartInventory = () => {
-  const [itemsInCart, setItemsInCart] = useCart();
+  const [itemsInCart, setItemsInCart, removeItem] = useCart();
   return (
     <StyledDiv>
       <ul>
-        {itemsInCart.map(({ name }) => (
-          <CartItem name={name} />
+        {itemsInCart.map(({ name }, index) => (
+          <CartItem name={name} index={index} removeItem={removeItem} />
         ))}
       </ul>
       <Link href="/checkout">
