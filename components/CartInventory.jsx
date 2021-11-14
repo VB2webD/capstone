@@ -19,7 +19,7 @@ const CartInventory = () => {
         ))}
       </ul>
       <Link href="/checkout">
-        <StyledLink>Buy</StyledLink>
+        <StyledButton>Buy</StyledButton>
       </Link>
     </StyledDiv>
   );
@@ -48,7 +48,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const StyledLink = styled.button`
+const StyledButton = styled.button`
   color: white;
   background-color: var(--cta-color-main-active);
   border: 0;
