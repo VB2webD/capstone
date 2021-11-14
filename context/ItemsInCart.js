@@ -5,9 +5,9 @@ const CartContext = createContext(undefined);
 
 export function CartProvider({ children }) {
   const [itemsInCart, setItemsInCart] = useLocalStorageState("shoppingCart", [
-    { name: "Brot" },
-    { name: "Salami" },
-    { name: "Eier" },
+    { name: "Brot", amount: 1 },
+    { name: "Salami", amount: 1 },
+    { name: "Eier", amount: 3 },
   ]);
 
   // add item++ decrement item --, if (item =+ item)
@@ -18,8 +18,26 @@ export function CartProvider({ children }) {
     setItemsInCart([...front, ...back]);
   };
 
+  const addItem = (item) => {
+    if (itemsInCart.find((cart) => cart.name === item.name)) {
+      const index = itemsInCart.findIndex((cart) => cart.name === item.name);
+      const _arraycopy = [...itemsInCart];
+      const front = _arraycopy.slice(0, index);
+
+      let copy = _arraycopy[index];
+      copy.amount += item.amount;
+
+      const back = _arraycopy.slice(index + 1, _arraycopy.length - index + 1);
+      setItemsInCart([...front, copy, ...back]);
+    } else {
+      setItemsInCart([...itemsInCart, item]);
+    }
+  };
+
   return (
-    <CartContext.Provider value={{ itemsInCart, setItemsInCart, removeItem }}>
+    <CartContext.Provider
+      value={{ itemsInCart, setItemsInCart, removeItem, addItem }}
+    >
       {children}
     </CartContext.Provider>
   );
