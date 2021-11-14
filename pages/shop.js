@@ -1,6 +1,6 @@
-import { MongoGridFSChunkError } from "mongodb";
 import React from "react";
 import Layout from "../components/layout/Layout";
+import ShopItem from "../components/ShopItem";
 
 const Shop = () => {
   const mockA = [
@@ -12,7 +12,7 @@ const Shop = () => {
     <Layout title="Shop" hasFooter hasCart>
       <h1>Hello World</h1>
       {mockA.map(({ slug, name, price }) => (
-        <Item name={name} price={price} key={slug} />
+        <ShopItem name={name} price={price} key={slug} slug={slug} />
       ))}
     </Layout>
   );
