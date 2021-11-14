@@ -4,7 +4,11 @@ export const useLocalStorageState = (key, defaultValue) => {
   const [value, setValue] = useState(defaultValue);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
+    if (
+      typeof window !== "undefined" &&
+      !!navigator.cookieEnabled &&
+      !!window.localStorage
+    ) {
       try {
         const item = window.localStorage.getItem(key);
         setValue(item ? JSON.parse(item) : defaultValue);
@@ -17,7 +21,11 @@ export const useLocalStorageState = (key, defaultValue) => {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
+    if (
+      typeof window !== "undefined" &&
+      !!navigator.cookieEnabled &&
+      window.localStorage
+    ) {
       try {
         window.localStorage.setItem(key, JSON.stringify(value));
       } catch (error) {

@@ -38,3 +38,5 @@ Ideation
 - implement delete functionality in Provider
 - adress minor styling bugs
 - create shopping Cart
+- create addItem functionality in Provider
+- create Form with submit button to add items to Cart
