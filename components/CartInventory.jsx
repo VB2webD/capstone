@@ -9,10 +9,11 @@ const CartInventory = () => {
   return (
     <StyledDiv>
       <ul>
-        {itemsInCart.map(({ name }, index) => (
+        {itemsInCart.map(({ name, amount }, index) => (
           <CartItem
             key={index}
             name={name}
+            amount={amount}
             index={index}
             removeItem={removeItem}
           />

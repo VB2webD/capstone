@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const CartItem = ({ name, index, removeItem }) => {
+const CartItem = ({ name, amount, index, removeItem }) => {
   return (
     <StyledLi>
-      <p>{name}</p>
+      <p>
+        {amount} x {name}
+      </p>
       <button onClick={() => removeItem(index)}>🗑</button>
     </StyledLi>
   );
