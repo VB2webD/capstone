@@ -16,12 +16,20 @@ export async function getItems() {
   return data;
 }
 
-//dynamic:
+// dynamic:
 
-// export async function getBag(slug) {
-//   await client.connect();
-//   const db = client.db(capstone_candyshop);
-//   const collection = db.collection("bags");
-//   const data = await collection.findOne({ slug });
-//   return data;
-// }
+export async function getBag(input) {
+  await client.connect();
+  const db = client.db("capstone_candyshop");
+  const collection = db.collection("bags");
+  const data = await collection.findOne({ slug: `${input}` });
+  return data;
+}
+
+export async function getItem(input) {
+  await client.connect();
+  const db = client.db("capstone_candyshop");
+  const collection = db.collection("items");
+  const data = await collection.findOne({ slug: `${input}` });
+  return data;
+}
