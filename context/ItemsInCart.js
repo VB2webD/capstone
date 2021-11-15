@@ -19,8 +19,8 @@ export function CartProvider({ children }) {
   };
 
   const addItem = (item) => {
-    if (itemsInCart.find((cart) => cart.name === item.name)) {
-      const index = itemsInCart.findIndex((cart) => cart.name === item.name);
+    if (itemsInCart.find((cart) => cart.slug === item.slug)) {
+      const index = itemsInCart.findIndex((cart) => cart.slug === item.slug);
       const _arraycopy = [...itemsInCart];
       const front = _arraycopy.slice(0, index);
 
