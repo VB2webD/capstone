@@ -21,7 +21,7 @@ const CounterForm = ({ slug, name, isTiny }) => {
   };
 
   const amountHandlerInputChange = (event) => {
-    setAmount(parseInt(event.target.value));
+    setAmount(parseInt(event.target.value, 10));
     console.log(typeof amount);
   };
 
