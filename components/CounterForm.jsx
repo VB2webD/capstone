@@ -4,7 +4,8 @@ import { useCart } from "../context/ItemsInCart";
 
 const CounterForm = ({ slug, name, isTiny }) => {
   const { itemsInCart, setItemsInCart, addItem } = useCart();
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
+  const [open, setOpen] = useState(false);
 
   const decrementAmount = (by) => {
     setAmount((amount) => amount - by);
@@ -21,7 +22,7 @@ const CounterForm = ({ slug, name, isTiny }) => {
   };
 
   const amountHandlerInputChange = (event) => {
-    if (event.target.value === "" || event.target.value > 99) {
+    if (event.target.value === "") {
       setAmount(() => 0);
     }
     if (event.target.value > 99) {
@@ -33,42 +34,46 @@ const CounterForm = ({ slug, name, isTiny }) => {
   };
 
   /* 
+      Submit
     - Input + 
-    Submit
-    
-    */
+  */
 
   return (
     <StyledForm onSubmit={handleSubmit} isTiny={isTiny}>
-      <fieldset>
-        <input
-          type="button"
-          onClick={() => decrementAmount(1)}
-          value="-"
-          aria-label="decrement amount by 1"
-        />
-        <input
-          type="number"
-          min="0"
-          max="99"
-          step="1"
-          id="amount"
-          name="amount"
-          value={`${amount}`}
-          onChange={amountHandlerInputChange}
-        />
-        <input
-          type="button"
-          onClick={() => incrementAmount(1)}
-          value="+"
-          aria-label="increment amount by 1"
-        />
-      </fieldset>
       <input
-        type="submit"
+        onClick={() => {
+          setOpen(!open);
+        }}
+        type={open ? "button" : "submit"}
         value={isTiny ? "Hinzufügen" : "In den Warenkorb"}
         aria-label="add to shopping Cart"
       />
+      {open ? (
+        <fieldset>
+          <input
+            type="button"
+            onClick={() => decrementAmount(1)}
+            value="-"
+            aria-label="decrement amount by 1"
+          />
+          <input
+            type="number"
+            min="1"
+            max="99"
+            step="1"
+            id="amount"
+            name="amount"
+            value={`${amount}`}
+            onChange={amountHandlerInputChange}
+          />
+          <input
+            type="button"
+            onClick={() => incrementAmount(1)}
+            value="+"
+            aria-label="increment amount by 1"
+          />
+        </fieldset>
+      ) : null}
     </StyledForm>
   );
 };
@@ -80,8 +85,6 @@ export default CounterForm;
 ------- */
 
 const StyledForm = styled.form`
-  border: 1px solid salmon;
-
   input {
     background-color: ${(props) =>
       props.isTiny ? "var(--cta-color-main)" : "var(--cta-color-main-active)"};

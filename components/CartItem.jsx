@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { useCart } from "../context/ItemsInCart";
 
 const CartItem = ({ name, amount, index }) => {
   const { removeItem } = useCart();
-  
+
   return (
     <StyledLi>
       <p>
