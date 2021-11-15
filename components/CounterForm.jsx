@@ -20,6 +20,7 @@ const CounterForm = ({ slug, name }) => {
     addItem({ name, slug, amount: amount });
     event.preventDefault();
     alert("submitted " + amount + "x " + name);
+    setAmount(() => 0);
   };
 
   const amountHandlerInputChange = (event) => {

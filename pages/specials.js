@@ -27,11 +27,9 @@ const Specials = ({ bags }) => {
 
 export default Specials;
 
-/*
--------
-Styles:
--------
-*/
+/* -------
+ Styles:
+------- */
 
 const StyledList = styled.div`
   display: grid;
