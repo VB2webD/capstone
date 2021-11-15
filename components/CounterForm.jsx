@@ -21,8 +21,15 @@ const CounterForm = ({ slug, name, isTiny }) => {
   };
 
   const amountHandlerInputChange = (event) => {
-    setAmount(parseInt(event.target.value, 10));
-    console.log(typeof amount);
+    if (event.target.value === "" || event.target.value > 99) {
+      setAmount(() => 0);
+    }
+    if (event.target.value > 99) {
+      setAmount(() => 99);
+    } else {
+      console.log("success");
+      setAmount(parseInt(event.target.value, 10));
+    }
   };
 
   /* 
@@ -34,7 +41,12 @@ const CounterForm = ({ slug, name, isTiny }) => {
   return (
     <StyledForm onSubmit={handleSubmit} isTiny={isTiny}>
       <fieldset>
-        <input type="button" onClick={() => decrementAmount(1)} value="-" aria-label="decrement amount by 1"/>
+        <input
+          type="button"
+          onClick={() => decrementAmount(1)}
+          value="-"
+          aria-label="decrement amount by 1"
+        />
         <input
           type="number"
           min="0"
@@ -45,9 +57,18 @@ const CounterForm = ({ slug, name, isTiny }) => {
           value={`${amount}`}
           onChange={amountHandlerInputChange}
         />
-        <input type="button" onClick={() => incrementAmount(1)} value="+" aria-label="increment amount by 1"/>
+        <input
+          type="button"
+          onClick={() => incrementAmount(1)}
+          value="+"
+          aria-label="increment amount by 1"
+        />
       </fieldset>
-      <input type="submit" value={isTiny ? "Hinzufügen" : "In den Warenkorb"} aria-label="add to shopping Cart"/>
+      <input
+        type="submit"
+        value={isTiny ? "Hinzufügen" : "In den Warenkorb"}
+        aria-label="add to shopping Cart"
+      />
     </StyledForm>
   );
 };
@@ -64,7 +85,6 @@ const StyledForm = styled.form`
   input {
     background-color: ${(props) =>
       props.isTiny ? "var(--cta-color-main)" : "var(--cta-color-main-active)"};
-    
   }
 
   fieldset {
