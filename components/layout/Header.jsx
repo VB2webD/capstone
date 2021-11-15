@@ -1,25 +1,34 @@
-import { useRouter } from "next/dist/client/router";
 import React from "react";
 import styled from "styled-components";
+import ShoppingCart from "../ShoppingCart";
 
-const Header = ({ title }) => {
+const Header = ({ title, hasCart }) => {
   return (
     <StyledHeader>
-      <span>{title}</span>
+      <StyledFlex>
+        <StyledTitle>{title}</StyledTitle>
+        {hasCart ? <ShoppingCart /> : null}
+      </StyledFlex>
     </StyledHeader>
   );
 };
 export default Header;
 
+const StyledFlex = styled.div`
+  display: flex;
+`;
+
+const StyledTitle = styled.div`
+  position: relative;
+  left: 50%;
+  top: 1.3rem;
+`;
+
 const StyledHeader = styled.header`
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: var(--header-height);
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid black;
   background-color: var(--bg-color-main-white);
 `;

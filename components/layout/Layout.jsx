@@ -2,12 +2,13 @@ import styled from "styled-components";
 import React from "react";
 import Header from "./Header";
 import { Footer } from "./Footer";
+import HtmlHead from "./Head";
 
-const Layout = ({ hasFooter, title, children }) => {
-  console.log(hasFooter);
+const Layout = ({ hasCart, hasFooter, title, children }) => {
   return (
     <>
-      <Header title={title} />
+      <HtmlHead title={title} />
+      <Header title={title} hasCart={hasCart} />
       <StyledMain hasFooter>{children}</StyledMain>
       {hasFooter ? <Footer /> : null}
     </>
@@ -15,6 +16,10 @@ const Layout = ({ hasFooter, title, children }) => {
 };
 
 export default Layout;
+
+/* -------
+  Styles:
+------- */
 
 const StyledMain = styled.main`
   position: absolute;
@@ -24,6 +29,6 @@ const StyledMain = styled.main`
   margin: 1vw, 0;
   padding: 0 1vw;
   line-break: normal;
-  z-index: 1;
+  z-index: 0;
   background-color: var(--bg-color-main-light);
 `;

@@ -32,3 +32,11 @@ Ideation
 ## Week 2
 
 - finish Backend implementation for specials page
+- fix image link in db
+- create Provider
+- create Local Storage custom hook
+- implement delete functionality in Provider
+- adress minor styling bugs
+- create shopping Cart
+- create addItem functionality in Provider
+- create Form with submit button to add items to Cart

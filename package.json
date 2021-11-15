@@ -9,7 +9,6 @@
     "lint": "next lint",
     "test": "jest --watch --testPathPattern=__tests__",
     "cypress": "cypress open"
-
   },
   "dependencies": {
     "mongodb": "^4.1.4",

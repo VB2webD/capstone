@@ -29,15 +29,14 @@ const StyledFooter = styled.footer`
   height: var(--footer-height);
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid black;
-  background-color: var(--bg-color-white);
+  background-color: var(--bg-color-main-white);
   padding: 0;
   margin: 0;
   z-index: 1;
 
   .active {
     background-color: var(--bg-color-main-white);
-    color: var(--cta-color-main);
+    color: var(--cta-color-main-active);
   }
 
   a {
@@ -47,7 +46,8 @@ const StyledFooter = styled.footer`
     padding-top: 1.3rem;
 
     &:hover {
-      background-color: var(--cta-color-main-active);
+      background-color: var(--cta-color-main);
+      color: var(--bg-color-main-white);
     }
   }
 `;
