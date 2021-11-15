@@ -34,13 +34,5 @@ export const useLocalStorageState = (key, defaultValue) => {
     }
   }, [value, key]);
 
-  // Only works with Arr
-
-  const removeValue = (index) => {
-    const front = value.slice(0, index);
-    const back = value.slice(index + 1, value.length - index + 1);
-    setValue([...front, ...back]);
-  };
-
   return [value, setValue];
 };

@@ -7,7 +7,7 @@ const HtmlHead = ({ title }) => {
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="Fav icon" href="/candyHeader.ico"></link>
+      <link rel="icon" href="/candyHeader.ico"></link>
     </Head>
   );
 };

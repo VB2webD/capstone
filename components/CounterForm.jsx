@@ -32,9 +32,9 @@ const CounterForm = ({ slug, name, isTiny }) => {
     */
 
   return (
-    <StyledForm onSubmit={handleSubmit} isTiny>
+    <StyledForm onSubmit={handleSubmit} isTiny={isTiny}>
       <fieldset>
-        <input type="button" onClick={() => decAmount(1)} value="-" />
+        <input type="button" onClick={() => decrementAmount(1)} value="-" aria-label="decrement amount by 1"/>
         <input
           type="number"
           min="0"
@@ -45,9 +45,9 @@ const CounterForm = ({ slug, name, isTiny }) => {
           value={`${amount}`}
           onChange={amountHandlerInputChange}
         />
-        <input type="button" onClick={() => incAmount(1)} value="+" />
+        <input type="button" onClick={() => incrementAmount(1)} value="+" aria-label="increment amount by 1"/>
       </fieldset>
-      <input type="submit" value={isTiny ? "Hinzufügen" : "In den Warenkorb"} />
+      <input type="submit" value={isTiny ? "Hinzufügen" : "In den Warenkorb"} aria-label="add to shopping Cart"/>
     </StyledForm>
   );
 };
