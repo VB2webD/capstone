@@ -2,30 +2,27 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../context/ItemsInCart";
 
-const CounterForm = ({ slug, name }) => {
+const CounterForm = ({ slug, name, isTiny }) => {
   const { itemsInCart, setItemsInCart, addItem } = useCart();
   const [amount, setAmount] = useState(0);
 
   const decAmount = (int) => {
     setAmount((amount) => amount - int);
-    console.log(name + " amount:" + amount);
   };
 
   const incAmount = (int) => {
     setAmount((amount) => amount + int);
-    console.log(name + " amount:" + amount);
   };
 
   const handleSubmit = (event) => {
     addItem({ name, slug, amount: amount });
     event.preventDefault();
-    alert("submitted " + amount + "x " + name);
     setAmount(() => 0);
   };
 
   const amountHandlerInputChange = (event) => {
-    setAmount(event.target.value);
-    console.log(amount);
+    setAmount(parseInt(event.target.value));
+    console.log(typeof amount);
   };
 
   /* 
@@ -35,19 +32,22 @@ const CounterForm = ({ slug, name }) => {
     */
 
   return (
-    <StyledForm onSubmit={handleSubmit}>
+    <StyledForm onSubmit={handleSubmit} isTiny>
       <fieldset>
         <input type="button" onClick={() => decAmount(1)} value="-" />
         <input
-          type="text"
+          type="number"
+          min="0"
+          max="99"
+          step="1"
           id="amount"
           name="amount"
           value={`${amount}`}
-          onChange={() => amountHandlerInputChange()}
+          onChange={amountHandlerInputChange}
         />
         <input type="button" onClick={() => incAmount(1)} value="+" />
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input type="submit" value={isTiny ? "Hinzufügen" : "In den Warenkorb"} />
     </StyledForm>
   );
 };
@@ -60,4 +60,25 @@ export default CounterForm;
 
 const StyledForm = styled.form`
   border: 1px solid salmon;
+
+  input {
+    background-color: ${(props) =>
+      props.isTiny ? "var(--cta-color-main)" : "var(--cta-color-main-active)"};
+    
+  }
+
+  fieldset {
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    input {
+      border: none;
+      text-align: center;
+      background-color: var(--bg-color-main-white);
+    }
+
+    :hover {
+      background-color: var(--cta-color-main);
+    }
+  }
 `;

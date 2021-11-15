@@ -13,7 +13,6 @@ const ShoppingCart = () => {
       <StyledDiv
         onClick={() => {
           setOpen(!open);
-          console.log("shoppingCard open " + open);
         }}
       >
         <span>Tüte</span>
