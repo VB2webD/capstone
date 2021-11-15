@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const CartItem = ({ name, amount, index, removeItem }) => {
+const CartItem = ({ name, amount, index }) => {
+  const { removeItem } = useCart();
+  
   return (
     <StyledLi>
       <p>
