@@ -5,7 +5,7 @@ import CartItem from "./CartItem";
 import Link from "next/link";
 
 const CartInventory = () => {
-  const { itemsInCart, setItemsInCart, removeItem } = useCart();
+  const { itemsInCart, setItemsInCart } = useCart();
   return (
     <StyledDiv>
       <ul>
@@ -15,7 +15,6 @@ const CartInventory = () => {
             name={name}
             amount={amount}
             index={index}
-            removeItem={removeItem}
           />
         ))}
       </ul>
