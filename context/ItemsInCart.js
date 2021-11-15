@@ -21,14 +21,18 @@ export function CartProvider({ children }) {
   const addItem = (item) => {
     if (itemsInCart.find((cart) => cart.slug === item.slug)) {
       const index = itemsInCart.findIndex((cart) => cart.slug === item.slug);
-      const _arraycopy = [...itemsInCart];
-      const front = _arraycopy.slice(0, index);
 
-      let copy = _arraycopy[index];
-      copy.amount += item.amount;
+      const front = itemsInCart.slice(0, index);
 
-      const back = _arraycopy.slice(index + 1, _arraycopy.length - index + 1);
-      setItemsInCart([...front, copy, ...back]);
+      const back = itemsInCart.slice(index + 1, itemsInCart.length - index + 1);
+      setItemsInCart([
+        ...front,
+        {
+          ...itemsInCart[index],
+          amount: itemsInCart[index].amount + item.amount,
+        },
+        ...back,
+      ]);
     } else {
       setItemsInCart([...itemsInCart, item]);
     }
