@@ -6,12 +6,12 @@ const CounterForm = ({ slug, name, isTiny }) => {
   const { itemsInCart, setItemsInCart, addItem } = useCart();
   const [amount, setAmount] = useState(0);
 
-  const decAmount = (int) => {
-    setAmount((amount) => amount - int);
+  const decrementAmount = (by) => {
+    setAmount((amount) => amount - by);
   };
 
-  const incAmount = (int) => {
-    setAmount((amount) => amount + int);
+  const incrementAmount = (by) => {
+    setAmount((amount) => amount + by);
   };
 
   const handleSubmit = (event) => {
