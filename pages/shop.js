@@ -1,21 +1,43 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import ShopItem from "../components/ShopItem";
+import { getItems } from "../utils/data/getData";
 
-const Shop = () => {
-  const mockA = [
-    { slug: "zuckerstangen", name: "Zuckerstangen", price: 1.5 },
-    { slug: "saure-gurken", name: "Saure Gurken", price: 0.1 },
-    { slug: "weingummi", name: "Weingummi", price: 0.05 },
-  ];
+const Shop = ({ items }) => {
   return (
     <Layout title="Shop" hasFooter hasCart>
-      <h1>Hello World</h1>
-      {mockA.map(({ slug, name, price }) => (
-        <ShopItem name={name} price={price} key={slug} slug={slug} />
+      <h1>Tasty sweets</h1>
+      {items.map(({ slug, name, price, isInStock, image }) => (
+        <ShopItem
+          name={name.de}
+          image={image.small}
+          price={price}
+          key={slug}
+          slug={slug}
+          isInStock={isInStock}
+        />
       ))}
     </Layout>
   );
 };
 
 export default Shop;
+
+/* --------------------------
+  provide Server side props:
+-------------------------- */
+
+export async function getStaticProps() {
+  const res = await getItems();
+  const items = await JSON.parse(JSON.stringify(res));
+  if (!items) {
+    console.log("failed to fetch item Data");
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { items },
+  };
+}

@@ -8,6 +8,14 @@ export async function getBags() {
   return data;
 }
 
+export async function getItems() {
+  await client.connect();
+  const db = client.db("capstone_candyshop");
+  const collection = db.collection("items");
+  const data = await collection.find().toArray();
+  return data;
+}
+
 //dynamic:
 
 // export async function getBag(slug) {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import Bag from "../components/Bag";
 import styled from "styled-components";
-import { getBags } from "../utils/data/getBags";
+import { getBags } from "../utils/data/getData";
 
 const Specials = ({ bags }) => {
   return (
@@ -38,11 +38,9 @@ const StyledList = styled.div`
   gap: 2rem;
 `;
 
-/*
---------------------------
-provide Server side props:
---------------------------
-*/
+/* --------------------------
+  provide Server side props:
+-------------------------- */
 
 export async function getStaticProps() {
   const res = await getBags();
