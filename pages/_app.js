@@ -1,4 +1,4 @@
-import { CartProvider } from "../context/ItemsInCart.js";
+import { CartProvider } from "../context/CartContext";
 import "../styles/globalStyles.js";
 import GlobalStyles from "../styles/globalStyles.js";
 
