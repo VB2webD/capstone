@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ShoppingCart from "../ShoppingCart";
+import ShoppingCart from "../../ShoppingCart";
 
 const Header = ({ title, hasCart }) => {
   return (
