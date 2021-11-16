@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ShopItem = ({ slug, name, price, image }) => {
-
   return (
     <ItemContainer>
       <Image src={image} width={125} height={125} />
@@ -21,7 +20,7 @@ const ShopItem = ({ slug, name, price, image }) => {
         slug={slug}
         price={price}
         isTiny={true}
-        variant={{value: "default"}}
+        variant={{ value: "🌈" }}
       />
     </ItemContainer>
   );

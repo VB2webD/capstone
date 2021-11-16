@@ -13,12 +13,12 @@ export function CartProvider({ children }) {
     {
       name: "Salami",
       slug: "salami",
-      variants: [{ variant: "weissbrot", amount: 3 }],
+      variants: [{ variant: "saftigeSalami", amount: 3 }],
     },
     {
       name: "Eier",
       slug: "eier",
-      variants: [{ variant: "weissbrot", amount: 2 }],
+      variants: [{ variant: "frischeEier", amount: 2 }],
     },
   ]);
 
