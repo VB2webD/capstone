@@ -16,7 +16,7 @@ export async function getItems() {
   return data;
 }
 
-// dynamic:
+// For dynamic Routes:
 
 export async function getBag(input) {
   await client.connect();
