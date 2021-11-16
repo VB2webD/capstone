@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useCart } from "../context/ItemsInCart";
+import { useCart } from "../context/CartContext";
 
-const CounterForm = ({ slug, name, isTiny }) => {
+const CounterForm = ({ slug, name, isTiny, variant }) => {
   const { itemsInCart, setItemsInCart, addItem } = useCart();
   const [amount, setAmount] = useState(1);
   const [open, setOpen] = useState(false);
@@ -16,7 +16,7 @@ const CounterForm = ({ slug, name, isTiny }) => {
   };
 
   const handleSubmit = (event) => {
-    addItem({ name, slug, amount: amount });
+    addItem({ name, slug, amount: amount, variant: variant.value });
     event.preventDefault();
     setAmount(() => 0);
   };
@@ -86,8 +86,7 @@ export default CounterForm;
 
 const StyledForm = styled.form`
   input {
-    background-color: ${(props) =>
-      props.isTiny ? "var(--cta-color-main)" : "var(--cta-color-main-active)"};
+    background-color: var(--cta-color-main);
   }
 
   fieldset {

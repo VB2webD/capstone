@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layouts/layout/Layout";
 import ShopItem from "../components/ShopItem";
 import { getItems } from "../utils/data/getData";
 
@@ -9,16 +9,19 @@ const Shop = ({ items }) => {
     <Layout title="Shop" hasFooter hasCart>
       <h1>Tasty sweets</h1>
       <StyledItemDisplay>
-        {items.map(({ slug, name, price, isInStock, image }) => (
-          <ShopItem
-            name={name.de}
-            image={image.small}
-            price={price}
-            key={slug}
-            slug={slug}
-            isInStock={isInStock}
-          />
-        ))}
+        {items.map(({ slug, name, price, isInStock, image }) => {
+          
+          return (
+            <ShopItem
+              name={name.de}
+              image={image.small}
+              price={price}
+              key={slug}
+              slug={slug}
+              isInStock={isInStock}
+            />
+          );
+        })}
       </StyledItemDisplay>
     </Layout>
   );

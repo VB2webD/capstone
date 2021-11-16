@@ -1,28 +1,45 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { getItem, getItems } from "../../../utils/data/getData";
 import ItemDetails from "../../../components/ItemDetails";
-import Layout from "../../../components/layout/Layout";
+import Layout from "../../../components/layouts/layout/Layout";
 
-const Details = ({ data }) => {
+const Details = ({
+  data: {
+    _id,
+    name,
+    description,
+    image,
+    weight,
+    price,
+    isVegan,
+    isInStock,
+    minimum,
+    options,
+  },
+}) => {
   return (
-    <Layout title={data.name.de} hasFooter={false}>
+    <Layout title={name.de} hasFooter={false} hasCart>
       <ItemDetails
-        key={data._id}
-        name={data.name.de}
-        description={data.description}
-        image={data.image.big}
-        weight={data.weight}
-        price={data.price}
-        isVegan={data.isVegan}
-        isInStock={data.isInStock}
-        minimum={data.minimum}
+        key={_id}
+        name={name.de}
+        description={description}
+        image={image.big}
+        weight={weight}
+        price={price}
+        isVegan={isVegan}
+        isInStock={isInStock}
+        minimum={minimum}
+        options={options}
       />
     </Layout>
   );
 };
 
 export default Details;
+
+/* --------------------------
+  provide Server side props:
+-------------------------- */
 
 export async function getStaticProps({ params }) {
   const res = await getItem(params.slug);

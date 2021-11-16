@@ -2,23 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import CounterForm from "./CounterForm";
 import Image from "next/image";
-import router from "next/router";
+import Link from "next/link";
 
 const ShopItem = ({ slug, name, price, image }) => {
-  const handleclick = (e) => {
-    e.preventDefault();
-    router.push("/details/items/" + slug);
-  };
 
   return (
     <ItemContainer>
       <Image src={image} width={125} height={125} />
       <div>
         <p>{name}</p>
-        <button onClick={handleclick}>Details</button>
+        <Link href={`/details/items/${slug}`}>
+          <a>Details</a>
+        </Link>
         <p>{numberFormat.format(price)}</p>
       </div>
-      <CounterForm name={name} slug={slug} price={price} isTiny={true} />
+      <CounterForm
+        name={name}
+        slug={slug}
+        price={price}
+        isTiny={true}
+        variant={{value: "default"}}
+      />
     </ItemContainer>
   );
 };
