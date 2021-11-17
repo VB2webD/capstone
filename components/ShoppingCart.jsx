@@ -21,7 +21,7 @@ const ShoppingCart = () => {
           src="/../public/shoppingCart.svg"
           height={30}
           width={30}
-          alt="Access your shopping card here"
+          alt="Access your shopping card"
         />
         {itemsInCart.length ? (
           <StyledCounter>{itemsInCart.length}</StyledCounter>

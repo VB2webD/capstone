@@ -7,7 +7,7 @@ import Link from "next/link";
 const ShopItem = ({ slug, name, price, image }) => {
   return (
     <ItemContainer>
-      <Image src={image} width={125} height={125} />
+      <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
       <div>
         <p>{name}</p>
         <Link href={`/details/items/${slug}`}>
@@ -15,6 +15,7 @@ const ShopItem = ({ slug, name, price, image }) => {
         </Link>
         <p>{numberFormat.format(price)}</p>
       </div>
+
       <CounterForm
         name={name}
         slug={slug}

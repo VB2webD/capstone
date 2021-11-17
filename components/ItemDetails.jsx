@@ -42,6 +42,12 @@ const ItemDetails = ({
       <p>{description}</p>
       <p>{weight} g</p>
       <p>{numberFormat.format(price)}</p>
+      {isVegan ? (
+        <Image src="/../public/vegan.svg" width={100} height={100}></Image>
+      ) : (
+        ""
+      )}
+
       {option ? (
         <Select
           value={selectedOption}
@@ -52,14 +58,18 @@ const ItemDetails = ({
       ) : (
         ""
       )}
-      <CounterForm
-        key={name}
-        name={name}
-        slug={slug}
-        weight={weight}
-        variant={selectedOption}
-        minimum={minimum}
-      />
+      {isInStock ? (
+        <CounterForm
+          key={name}
+          name={name}
+          slug={slug}
+          weight={weight}
+          variant={selectedOption}
+          minimum={minimum}
+        />
+      ) : (
+        <Image src={"/../public/soldOut.svg"} width={200} height={150}></Image>
+      )}
     </StyledCard>
   );
 };
