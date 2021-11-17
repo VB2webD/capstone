@@ -10,7 +10,6 @@ const Shop = ({ items }) => {
       <h1>Tasty sweets</h1>
       <StyledItemDisplay>
         {items.map(({ slug, name, price, isInStock, image }) => {
-          
           return (
             <ShopItem
               name={name.de}
@@ -32,6 +31,7 @@ export default Shop;
 /* -------
   Styles:
 ------- */
+
 const StyledItemDisplay = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

@@ -4,7 +4,7 @@ import CounterForm from "./CounterForm";
 import Image from "next/image";
 import Link from "next/link";
 
-const ShopItem = ({ slug, name, price, image }) => {
+const ShopItem = ({ slug, name, price, image, isInStock }) => {
   return (
     <ItemContainer>
       <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
@@ -16,13 +16,17 @@ const ShopItem = ({ slug, name, price, image }) => {
         <p>{numberFormat.format(price)}</p>
       </div>
 
-      <CounterForm
-        name={name}
-        slug={slug}
-        price={price}
-        isTiny={true}
-        variant={{ value: "🌈" }}
-      />
+      {isInStock ? (
+        <CounterForm
+          name={name}
+          slug={slug}
+          price={price}
+          isTiny={true}
+          variant={{ value: "🌈" }}
+        />
+      ) : (
+        <Image src={"/../public/soldOut.svg"} width={200} height={150}></Image>
+      )}
     </ItemContainer>
   );
 };
