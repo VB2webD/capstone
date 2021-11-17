@@ -22,7 +22,7 @@ export function CartProvider({ children }) {
     },
   ]);
 
-  // add item++ decrement item --, if (item =+ item)
+
 
   const removeItem = (index) => {
     const front = itemsInCart.slice(0, index);

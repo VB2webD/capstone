@@ -46,6 +46,19 @@ const ItemContainer = styled.div`
   border-radius: 1rem;
   background-color: var(--bg-color-main-white);
   padding: 0.2rem;
+
+  a {
+    color: var(--cta-color-main-active);
+    ::after {
+      content: "";
+      width: 25%;
+      display: block;
+      height: 2px;
+      margin: 3px auto 0;
+      background-color: var(--cta-color-main-active);
+    }
+  }
+
   div {
     display: flex;
     flex-direction: column;
