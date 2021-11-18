@@ -4,25 +4,10 @@ import { useLocalStorageState } from "../utils/useLocalStorage";
 const CartContext = createContext(undefined);
 
 export function CartProvider({ children }) {
-  const [itemsInCart, setItemsInCart] = useLocalStorageState("shoppingCart", [
-    {
-      name: "Brot",
-      slug: "brot",
-      variants: [{ variant: "weissbrot", amount: 1 }],
-    },
-    {
-      name: "Salami",
-      slug: "salami",
-      variants: [{ variant: "saftigeSalami", amount: 3 }],
-    },
-    {
-      name: "Eier",
-      slug: "eier",
-      variants: [{ variant: "frischeEier", amount: 2 }],
-    },
-  ]);
-
-
+  const [itemsInCart, setItemsInCart] = useLocalStorageState(
+    "shoppingCart",
+    []
+  );
 
   const removeItem = (index) => {
     const front = itemsInCart.slice(0, index);
@@ -44,7 +29,6 @@ export function CartProvider({ children }) {
 
       const hasVariant = getHasVariants(current);
 
-      console.log(hasVariant);
       if (hasVariant) {
         const hasTheSameVariant = getHasSameVariant(current, item);
 
