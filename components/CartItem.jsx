@@ -13,7 +13,7 @@ const CartItem = ({ name, variants, index }) => {
   return (
     <StyledLi>
       <p>
-        {total} x {name}
+        {total} × {name}
       </p>
       <button onClick={() => removeItem(index)}>🗑</button>
     </StyledLi>
