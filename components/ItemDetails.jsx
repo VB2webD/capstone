@@ -4,6 +4,8 @@ import Link from "next/link";
 import styled from "styled-components";
 import Select from "react-select";
 import CounterForm from "./CounterForm";
+import Vegan from "./images/vegan.svg";
+import SoldOut from "./images/soldOut.svg";
 
 var numberFormat = new Intl.NumberFormat("de-DE", {
   style: "currency",
@@ -38,15 +40,7 @@ const ItemDetails = ({
         <button>╳</button>
       </Link>
       <h2>{name} </h2>
-      {isVegan ? (
-        <StyledImage
-          src="/../public/vegan.svg"
-          width={100}
-          height={100}
-        ></StyledImage>
-      ) : (
-        ""
-      )}
+      {isVegan ? <Vegan width={100} height={100} /> : ""}
       <Image src={image} width={355} height={355} />
       <p>{description}</p>
       <p>{weight} g</p>
@@ -72,7 +66,7 @@ const ItemDetails = ({
           minimum={minimum}
         />
       ) : (
-        <Image src={"/../public/soldOut.svg"} width={200} height={150}></Image>
+        <SoldOut width={255} height={255} />
       )}
     </StyledCard>
   );

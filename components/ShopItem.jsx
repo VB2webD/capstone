@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import CounterForm from "./CounterForm";
-import Image from "next/image";
+import SoldOut from "./images/soldOut.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
   return (
     <ItemContainer>
       <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
       <div>
-        <p>{name}</p>
+        <h2>{name}</h2>
         <Link href={`/details/items/${slug}`}>
           <a>Details</a>
         </Link>
@@ -26,7 +27,7 @@ const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
           minimum={minimum}
         />
       ) : (
-        <Image src={"/../public/soldOut.svg"} width={200} height={150}></Image>
+        <SoldOut width={100} height={75}></SoldOut>
       )}
     </ItemContainer>
   );

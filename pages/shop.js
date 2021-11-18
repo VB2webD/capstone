@@ -7,7 +7,7 @@ import { getItems } from "../utils/data/getData";
 const Shop = ({ items }) => {
   return (
     <Layout title="Shop" hasFooter hasCart>
-      <h1>Tasty sweets</h1>
+      <h1>Dein persöhnlicher Mix</h1>
       <StyledItemDisplay>
         {items.map(({ _id, slug, name, price, isInStock, image, minimum }) => {
           return (
@@ -39,6 +39,7 @@ const StyledItemDisplay = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
+  h1,h2{ color: var(--)}
 `;
 
 /* --------------------------
