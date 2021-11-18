@@ -44,6 +44,7 @@ const StyledBag = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 0.5rem;
+
   p {
     margin: 0.2rem;
     align-items: baseline;
@@ -53,7 +54,8 @@ const StyledBag = styled.div`
 const StyledVegan = styled.p`
   height: 25px;
 `;
-const StyledName = styled.div`
+
+const StyledName = styled.h2`
   display: flex;
   justify-content: center;
   align-items: flex-end;

@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layouts/layout/Layout";
 
 const Checkout = () => {
   return (
     <Layout title="Checkout" hasFooter>
-      <h1>Hello World</h1>
+      <h1>Deine Bestellung</h1>
     </Layout>
   );
 };

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layouts/layout/Layout";
 import Bag from "../components/Bag";
 import styled from "styled-components";
-import { getBags } from "../utils/data/getBags";
+import { getBags } from "../utils/data/getData";
 
 const Specials = ({ bags }) => {
   return (
     <>
       <Layout title="Specials" hasFooter hasCart>
-        <h1>Hello World</h1>
+        <h1>Vertige Mischungen</h1>
         <StyledList>
           {bags.map(({ slug, image, isVegan, name, variants }) => (
             <Bag
@@ -36,13 +36,15 @@ const StyledList = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+
+  h1 {
+    text-align: center;
+  }
 `;
 
-/*
---------------------------
-provide Server side props:
---------------------------
-*/
+/* --------------------------
+  provide Server side props:
+-------------------------- */
 
 export async function getStaticProps() {
   const res = await getBags();

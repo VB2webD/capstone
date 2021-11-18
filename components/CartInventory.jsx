@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useCart } from "../context/ItemsInCart";
+import { useCart } from "../context/CartContext";
 import CartItem from "./CartItem";
 import Link from "next/link";
 
@@ -9,13 +9,8 @@ const CartInventory = () => {
   return (
     <StyledDiv>
       <ul>
-        {itemsInCart.map(({ name, amount }, index) => (
-          <CartItem
-            key={index}
-            name={name}
-            amount={amount}
-            index={index}
-          />
+        {itemsInCart.map(({ name, variants }, index) => (
+          <CartItem key={index} name={name} variants={variants} index={index} />
         ))}
       </ul>
       <Link href="/checkout">

@@ -1,21 +1,61 @@
 import React from "react";
-import Layout from "../components/layout/Layout";
+import styled from "styled-components";
+import Layout from "../components/layouts/layout/Layout";
 import ShopItem from "../components/ShopItem";
+import { getItems } from "../utils/data/getData";
 
-const Shop = () => {
-  const mockA = [
-    { slug: "zuckerstangen", name: "Zuckerstangen", price: 1.5 },
-    { slug: "saure-gurken", name: "Saure Gurken", price: 0.1 },
-    { slug: "weingummi", name: "Weingummi", price: 0.05 },
-  ];
+const Shop = ({ items }) => {
   return (
     <Layout title="Shop" hasFooter hasCart>
-      <h1>Hello World</h1>
-      {mockA.map(({ slug, name, price }) => (
-        <ShopItem name={name} price={price} key={slug} slug={slug} />
-      ))}
+      <h1>Dein persöhnlicher Mix</h1>
+      <StyledItemDisplay>
+        {items.map(({ _id, slug, name, price, isInStock, image, minimum }) => {
+          return (
+            <ShopItem
+              name={name.de}
+              image={image.small}
+              price={price}
+              key={slug}
+              slug={slug}
+              isInStock={isInStock}
+              minimum={minimum}
+              _id={_id}
+            />
+          );
+        })}
+      </StyledItemDisplay>
     </Layout>
   );
 };
 
 export default Shop;
+
+/* -------
+  Styles:
+------- */
+
+const StyledItemDisplay = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+`;
+
+/* --------------------------
+  provide Server side props:
+-------------------------- */
+
+export async function getStaticProps() {
+  const res = await getItems();
+  const items = await JSON.parse(JSON.stringify(res));
+  if (!items) {
+    console.log("failed to fetch item Data");
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { items },
+  };
+}

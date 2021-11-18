@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import CartInventory from "./CartInventory";
-import { useCart } from "../context/ItemsInCart";
+import { useCart } from "../context/CartContext";
+import Tute from "./images/tute.svg";
 
 const ShoppingCart = () => {
   const [open, setOpen] = useState(false);
@@ -16,13 +16,7 @@ const ShoppingCart = () => {
         }}
       >
         <span>Tüte</span>
-        <Image
-          open={open}
-          src="/../public/shoppingCart.svg"
-          height={30}
-          width={30}
-          alt="Access your shopping card here"
-        />
+        <Tute height={30} width={30} />
         {itemsInCart.length ? (
           <StyledCounter>{itemsInCart.length}</StyledCounter>
         ) : null}
@@ -48,7 +42,6 @@ const StyledDiv = styled.div`
 `;
 
 const StyledCounter = styled.p`
-  color: var();
   position: absolute;
   width: 20px;
   height: 20px;

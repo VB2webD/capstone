@@ -1,13 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { useCart } from "../context/CartContext";
 
-const CartItem = ({ name, amount, index }) => {
+const CartItem = ({ name, variants, index }) => {
   const { removeItem } = useCart();
-  
+
+  let total = 0;
+  variants.forEach((item) => {
+    total += item.amount;
+  });
+
   return (
     <StyledLi>
       <p>
-        {amount} x {name}
+        {total} × {name}
       </p>
       <button onClick={() => removeItem(index)}>🗑</button>
     </StyledLi>

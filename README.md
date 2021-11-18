@@ -40,3 +40,15 @@ Ideation
 - create shopping Cart
 - create addItem functionality in Provider
 - create Form with submit button to add items to Cart
+
+## Week 3
+
+- fill Shop page with items from backend
+- style Shop Item Component, add Counter, remove mock array
+- create dynamic routes for Item details
+- sanitise form input to only accept numbers <0 >99
+- implement variants for shop items
+- adapt provider to handle variants in shopping cart
+- adapt item display to show total amount of all variants of specific item
+- fix images for vercel deployment
+
