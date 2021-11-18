@@ -48,7 +48,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
           setOpen(!open);
         }}
         type={open ? "button" : "submit"}
-        value={isTiny ? "Hinzufügen" : "In den Warenkorb"}
+        value={isTiny ? "In die Tüte" : "In den Warenkorb"}
         aria-label="add to shopping Cart"
       />
       {open ? (
@@ -90,6 +90,7 @@ export default CounterForm;
 const StyledForm = styled.form`
   input {
     background-color: var(--cta-color-main);
+    
   }
 
   fieldset {
