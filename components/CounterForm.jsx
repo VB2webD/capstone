@@ -8,8 +8,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
   const [open, setOpen] = useState(false);
 
   const decrementAmount = (by) => {
-    if (amount < minimum) {
-    } else setAmount((amount) => amount - by);
+    if (amount >= minimum) setAmount((amount) => amount - by);
   };
 
   const incrementAmount = (by) => {
