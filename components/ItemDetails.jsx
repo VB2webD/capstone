@@ -37,16 +37,20 @@ const ItemDetails = ({
       <Link href="/shop">
         <button>╳</button>
       </Link>
-      <h2>{name}</h2>
+      <h2>{name} </h2>
+      {isVegan ? (
+        <StyledImage
+          src="/../public/vegan.svg"
+          width={100}
+          height={100}
+        ></StyledImage>
+      ) : (
+        ""
+      )}
       <Image src={image} width={355} height={355} />
       <p>{description}</p>
       <p>{weight} g</p>
       <p>{numberFormat.format(price)}</p>
-      {isVegan ? (
-        <Image src="/../public/vegan.svg" width={100} height={100}></Image>
-      ) : (
-        ""
-      )}
 
       {option ? (
         <Select
@@ -102,4 +106,10 @@ const StyledCard = styled.div`
     border: none;
     background-color: unset;
   }
+`;
+
+const StyledImage = styled(Image)`
+  position: absolute;
+  left: 22rem;
+  top: 0;
 `;

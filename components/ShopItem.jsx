@@ -4,7 +4,7 @@ import CounterForm from "./CounterForm";
 import Image from "next/image";
 import Link from "next/link";
 
-const ShopItem = ({ slug, name, price, image, isInStock }) => {
+const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
   return (
     <ItemContainer>
       <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
@@ -23,6 +23,7 @@ const ShopItem = ({ slug, name, price, image, isInStock }) => {
           price={price}
           isTiny={true}
           variant={{ value: "🌈" }}
+          minimum={minimum}
         />
       ) : (
         <Image src={"/../public/soldOut.svg"} width={200} height={150}></Image>

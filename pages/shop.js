@@ -9,7 +9,7 @@ const Shop = ({ items }) => {
     <Layout title="Shop" hasFooter hasCart>
       <h1>Tasty sweets</h1>
       <StyledItemDisplay>
-        {items.map(({ slug, name, price, isInStock, image }) => {
+        {items.map(({ _id, slug, name, price, isInStock, image, minimum }) => {
           return (
             <ShopItem
               name={name.de}
@@ -18,6 +18,8 @@ const Shop = ({ items }) => {
               key={slug}
               slug={slug}
               isInStock={isInStock}
+              minimum={minimum}
+              _id={_id}
             />
           );
         })}

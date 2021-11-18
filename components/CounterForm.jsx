@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../context/CartContext";
 
-const CounterForm = ({ slug, name, isTiny, variant }) => {
-  const { itemsInCart, setItemsInCart, addItem } = useCart();
-  const [amount, setAmount] = useState(1);
+const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
+  const { addItem } = useCart();
+  const [amount, setAmount] = useState(minimum);
   const [open, setOpen] = useState(false);
 
   const decrementAmount = (by) => {
-    setAmount((amount) => amount - by);
+    if (amount < minimum) {
+    } else setAmount((amount) => amount - by);
   };
 
   const incrementAmount = (by) => {
@@ -16,19 +17,24 @@ const CounterForm = ({ slug, name, isTiny, variant }) => {
   };
 
   const handleSubmit = (event) => {
-    addItem({ name, slug, amount: amount, variant: variant.value });
+    addItem({ _id, name, slug, amount: amount, variant: variant.value });
     event.preventDefault();
     setAmount(() => 0);
   };
 
   const amountHandlerInputChange = (event) => {
+    // sanitise Input, dunno why this stopped working, it used 2 and the cases still trigger!
     if (event.target.value === "") {
       setAmount(() => 0);
+      console.log("not a valid input");
     }
     if (event.target.value > 99) {
+      console.log("amount to high");
       setAmount(() => 99);
+    }
+    if (event.target.input > minimum) {
+      setAmount(() => minimum);
     } else {
-      console.log("success");
       setAmount(parseInt(event.target.value, 10));
     }
   };
@@ -93,6 +99,7 @@ const StyledForm = styled.form`
     border: none;
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
     input {
       border: none;
       text-align: center;
