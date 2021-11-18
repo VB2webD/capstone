@@ -48,14 +48,16 @@ const ItemContainer = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
+  gap: 0.5rem;
   align-items: center;
   border-radius: 1rem;
   background-color: var(--bg-color-main-white);
-  padding: 0.2rem;
+  gap: 0.5rem;
 
   a {
     color: var(--cta-color-main-active);
+
     ::after {
       content: "";
       width: 25%;
@@ -72,8 +74,9 @@ const ItemContainer = styled.div`
     align-content: center;
     min-height: fit-content;
     width: 100%;
-    p {
-      height: 2rem;
+
+    h2 {
+      height: 4rem;
     }
   }
 `;

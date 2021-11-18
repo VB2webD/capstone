@@ -39,7 +39,6 @@ const StyledItemDisplay = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  h1,h2{ color: var(--)}
 `;
 
 /* --------------------------

@@ -42,7 +42,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
   */
 
   return (
-    <StyledForm onSubmit={handleSubmit} isTiny={isTiny}>
+    <StyledForm onSubmit={handleSubmit} isTiny={isTiny} open={open}>
       <input
         onClick={() => {
           setOpen(!open);
@@ -90,22 +90,19 @@ export default CounterForm;
 const StyledForm = styled.form`
   input {
     background-color: var(--cta-color-main);
-    
+    border: none;
+    margin-bottom: ${(props) => (props.open ? 0 : "1rem")};
   }
 
   fieldset {
     border: none;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.2rem;
     justify-content: center;
+
     input {
-      border: none;
       text-align: center;
       background-color: var(--bg-color-main-white);
-    }
-
-    :hover {
-      background-color: var(--cta-color-main);
     }
   }
 `;

@@ -42,7 +42,6 @@ const StyledDiv = styled.div`
 `;
 
 const StyledCounter = styled.p`
-  color: var();
   position: absolute;
   width: 20px;
   height: 20px;
