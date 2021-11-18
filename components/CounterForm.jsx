@@ -24,11 +24,11 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
   const amountHandlerInputChange = (event) => {
     // sanitise Input
     if (event.target.value === "") {
-      return setAmount(() => 0);
+      return setAmount(0);
     } else if (event.target.value > 99) {
-      setAmount(() => 99);
+      setAmount(99);
     } else if (event.target.input > minimum) {
-      setAmount(() => minimum);
+      setAmount(minimum);
     } else {
       setAmount(parseInt(event.target.value, 10));
     }
