@@ -23,16 +23,12 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
   };
 
   const amountHandlerInputChange = (event) => {
-    // sanitise Input, dunno why this stopped working, it used 2 and the cases still trigger!
+    // sanitise Input
     if (event.target.value === "") {
-      setAmount(() => 0);
-      console.log("not a valid input");
-    }
-    if (event.target.value > 99) {
-      console.log("amount to high");
+      return setAmount(() => 0);
+    } else if (event.target.value > 99) {
       setAmount(() => 99);
-    }
-    if (event.target.input > minimum) {
+    } else if (event.target.input > minimum) {
       setAmount(() => minimum);
     } else {
       setAmount(parseInt(event.target.value, 10));
@@ -69,7 +65,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
             step="1"
             id="amount"
             name="amount"
-            value={`${amount}`}
+            value={amount}
             onChange={amountHandlerInputChange}
           />
           <input
