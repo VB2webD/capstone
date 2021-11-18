@@ -27,6 +27,8 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
       return setAmount(0);
     } else if (event.target.value > 99) {
       setAmount(99);
+    } else if (event.target.value < 0) {
+      setAmount(0);
     } else if (event.target.input > minimum) {
       setAmount(minimum);
     } else {
