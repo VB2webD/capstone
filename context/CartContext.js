@@ -46,9 +46,9 @@ export function CartProvider({ children }) {
 
       console.log(hasVariant);
       if (hasVariant) {
-        const hastheSameVariant = getHasSameVariant(current, item);
+        const hasTheSameVariant = getHasSameVariant(current, item);
 
-        if (hastheSameVariant) {
+        if (hasTheSameVariant) {
           const indexOfVariant = getIndexOfVariant(current, item);
 
           current.variants[indexOfVariant].amount += item.amount;
