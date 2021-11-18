@@ -6,8 +6,8 @@ const CartItem = ({ name, variants, index }) => {
   const { removeItem } = useCart();
 
   let total = 0;
-  variants.map((item) => {
-    return (total += item.amount);
+  variants.forEach((item) => {
+    total += item.amount;
   });
 
   return (
