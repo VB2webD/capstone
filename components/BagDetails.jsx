@@ -5,7 +5,7 @@ import Link from "next/link";
 import Select from "react-select";
 import CounterForm from "./CounterForm";
 import BagDetailsItem from "./BagDetailsItem";
-import Vegan from "./images/Vegan.svg";
+import Vegan from "./images/vegan.svg";
 import SoldOut from "./images/soldOut.svg";
 
 const BagDetails = ({
@@ -22,7 +22,6 @@ const BagDetails = ({
 
   const options = variants
     ? variants.map((item, index) => {
-
         return {
           value: index,
           label: `${item.weight}g ${item.name}`,
