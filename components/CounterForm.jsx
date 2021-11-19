@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useCart } from "../context/CartContext";
 
 const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
+
   const { addItem } = useCart();
   const [amount, setAmount] = useState(minimum);
   const [open, setOpen] = useState(false);

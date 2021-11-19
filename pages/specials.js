@@ -13,6 +13,7 @@ const Specials = ({ bags }) => {
           {bags.map(({ slug, image, isVegan, name, variants }) => (
             <Bag
               key={slug}
+              slug={slug}
               name={name.de}
               image={image}
               isVegan={isVegan}
