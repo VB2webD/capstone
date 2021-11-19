@@ -64,7 +64,7 @@ const BagDetails = ({
             options={options}
             placeholder={selectedOption.weight + "g"}
             onChange={sizeHandlerInputChange}
-          ></Select>
+          />
         ) : (
           ""
         )}
