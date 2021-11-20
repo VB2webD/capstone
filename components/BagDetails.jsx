@@ -59,12 +59,10 @@ const BagDetails = ({
         <h3>Größe</h3>
         {variants ? (
           <Select
-            value={variants.findIndex(
-              (variant) => variant.weight === selectedOption.weight
-            )}
+            value={selectedVariantIndex}
             options={options}
-            placeholder={selectedOption.weight + "g"}
-            onChange={sizeHandlerInputChange}
+            placeholder={selectedVariant.weight + "g"}
+            onChange={handleVariantChange}
           />
         ) : (
           ""
