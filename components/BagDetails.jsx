@@ -19,7 +19,7 @@ const BagDetails = ({
   isInStock,
 }) => {
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
-  const selectedVariant = variant[selectedVariantIndex];
+  const selectedVariant = variants[selectedVariantIndex];
 
   const options = variants
     ? variants.map((item, index) => {
@@ -45,13 +45,14 @@ const BagDetails = ({
         </Link>
         <h2>{name} </h2>
         {isVegan ? <Vegan width={100} height={100} /> : ""}
-        <p>{numberFormat.format(selectedOption.price)}</p>
+        <p>{numberFormat.format(selectedVariant.price)}</p>
         <p>
-          {selectedOption.weight
+          {selectedVariant.weight
             ? numberFormat.format(
-                ((selectedOption.price / selectedOption.weight) * 100).toFixed(
-                  2
-                )
+                (
+                  (selectedVariant.price / selectedVariant.weight) *
+                  100
+                ).toFixed(2)
               ) + " / 100g"
             : null}
         </p>
@@ -130,15 +131,10 @@ const StyledCard = styled.div`
     border: none;
     background-color: unset;
   }
+
   ul {
     text-align: left;
     list-style-type: none;
     padding-left: 0.5rem;
   }
-`;
-
-const StyledImage = styled(Image)`
-  position: absolute;
-  left: 22rem;
-  top: 0;
 `;
