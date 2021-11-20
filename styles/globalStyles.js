@@ -12,16 +12,18 @@ const globalStyles = createGlobalStyle`
   --bg-color-main-dark: rgb(206,153,233);
   --bg-color-main-light: rgb(248, 240, 252);
   --bg-color-main-white: rgb(252,252,252);
+  --cta-color-bag: rgb(236,91,41);
+  --cta-color-bag-active: rgb(247, 132, 93)
 }
 h1,h2 {
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
     color: var(--bg-color-main-dark);
     font-family: "Amatic SC", cursive;
     text-align: center;
   }
 html,
 body {
-  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;1,500&display=swap');
+  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
