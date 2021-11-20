@@ -29,8 +29,8 @@ const BagDetails = ({
       })
     : null;
 
-  const sizeHandlerInputChange = ({ value }) => {
-    setSelectedOption(variants[value]);
+  const handleVariantChange = ({ value }) => {
+    setSelectedVariantIndex(value); // value -> index of selected variant
   };
 
   return (
