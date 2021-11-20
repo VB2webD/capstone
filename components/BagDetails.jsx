@@ -74,7 +74,7 @@ const BagDetails = ({
             _id={_id}
             name={name}
             slug={slug}
-            variant={{ value: `${selectedOption.weight}g` }}
+            variant={{ value: `${selectedVariant.weight}g` }}
             minimum={1}
           />
         ) : (
