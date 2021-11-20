@@ -18,7 +18,8 @@ const BagDetails = ({
   variants,
   isInStock,
 }) => {
-  const [selectedOption, setSelectedOption] = useState(variants[0]);
+  const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
+  const selectedVariant = variant[selectedVariantIndex];
 
   const options = variants
     ? variants.map((item, index) => {
