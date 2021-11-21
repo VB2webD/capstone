@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Layout from "../components/layouts/layout/Layout";
-import Bag from "../components/Bag";
+import Layout from "../SRC/components/layouts/layout/Layout";
+import Bag from "../SRC/components/Bag";
 import styled from "styled-components";
 import { getBags } from "../utils/data/getData";
 

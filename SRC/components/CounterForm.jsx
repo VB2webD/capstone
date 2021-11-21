@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
 

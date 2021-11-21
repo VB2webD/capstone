@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import CartItem from "./CartItem";
 import Link from "next/link";
 
