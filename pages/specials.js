@@ -8,7 +8,7 @@ const Specials = ({ bags }) => {
   return (
     <>
       <Layout title="Specials" hasFooter hasCart>
-        <h1>Vertige Mischungen</h1>
+        <h1>Fertige Mischungen</h1>
         <StyledList>
           {bags.map(({ slug, image, isVegan, name, variants }) => (
             <Bag
