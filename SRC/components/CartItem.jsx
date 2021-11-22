@@ -31,6 +31,7 @@ const StyledLi = styled.li`
   justify-content: space-between;
   margin: 1%;
   padding: 1%;
+  
   :nth-child(odd) {
     background-color: var(--bg-color-main-light);
   }
