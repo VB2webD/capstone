@@ -8,7 +8,7 @@ import Image from "next/image";
 const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
   return (
     <ItemContainer>
-      <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
+      <Image src={image} width={145} height={145} alt={`Image of ${name}`} />
       <div>
         <h2>{name}</h2>
         <Link href={`/details/items/${slug}`}>
@@ -49,11 +49,12 @@ const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
   align-items: center;
   border-radius: 1rem;
   background-color: var(--bg-color-main-white);
-  gap: 0.5rem;
+  padding-top: 1rem;
 
   a {
     color: var(--cta-color-main-active);
@@ -76,7 +77,7 @@ const ItemContainer = styled.div`
     width: 100%;
 
     h2 {
-      height: 4rem;
+      height: 2rem;
     }
   }
 `;

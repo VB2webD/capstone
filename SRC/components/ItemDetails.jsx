@@ -40,10 +40,8 @@ const ItemDetails = ({
         <button>╳</button>
       </Link>
       <h2>{name} </h2>
-      {isVegan ? <Vegan width={100} height={100} /> : ""}
       <Image src={image} width={355} height={355} />
       <p>{description}</p>
-      <p>{weight} g</p>
       <p>{numberFormat.format(price)}</p>
 
       {option ? (
@@ -85,8 +83,7 @@ const StyledCard = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 0.5rem;
 
   h2 {
     color: var(--cta-color-main-active);
@@ -94,10 +91,11 @@ const StyledCard = styled.div`
 
   button {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     height: 2rem;
     width: 2rem;
+    font-size: 1.5rem;
     border: none;
     background-color: unset;
   }
