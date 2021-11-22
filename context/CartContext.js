@@ -4,10 +4,7 @@ import { useLocalStorageState } from "../utils/useLocalStorage";
 const CartContext = createContext(undefined);
 
 export function CartProvider({ children }) {
-  const [itemsInCart, setItemsInCart] = useLocalStorageState(
-    "shoppingCart",
-    []
-  );
+  const [itemsInCart, setItemsInCart] = useLocalStorageState("shoppingCart", []);
 
   const removeItem = (index) => {
     const front = itemsInCart.slice(0, index);

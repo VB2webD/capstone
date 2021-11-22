@@ -16,6 +16,6 @@ export default CheckoutItemVariant;
  Styles:
 ------- */
 
-const StyledItemVariant = styled.span`
+const StyledItemVariant = styled.p`
   padding-left: 1rem;
 `;
