@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useCart } from "../../context/CartContext";
+import Delete from "./images/delete.svg";
 
 const CartItem = ({ name, variants, index }) => {
   const { removeItem } = useCart();
@@ -15,7 +16,9 @@ const CartItem = ({ name, variants, index }) => {
       <p>
         {total} × {name}
       </p>
-      <button onClick={() => removeItem(index)}>🗑</button>
+      <button onClick={() => removeItem(index)}>
+        <Delete width={20} height={20} />
+      </button>
     </StyledLi>
   );
 };
@@ -31,7 +34,7 @@ const StyledLi = styled.li`
   justify-content: space-between;
   margin: 1%;
   padding: 1%;
-  
+
   :nth-child(odd) {
     background-color: var(--bg-color-main-light);
   }
@@ -41,6 +44,7 @@ const StyledLi = styled.li`
     height: 85%;
     border-radius: 5px;
     align-self: center;
+
     :hover {
       background-color: var(--bg-color-main);
     }
