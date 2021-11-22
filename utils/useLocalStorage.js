@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const useLocalStorageState = (key, defaultValue) => {
-  const [value, setValue] = useState(defaultValue);
+  const [value, setValue] = useState(
+    () => (console.log("[useLocalStorage] init"), defaultValue)
+  );
 
   useEffect(() => {
     if (
@@ -11,7 +13,13 @@ export const useLocalStorageState = (key, defaultValue) => {
     ) {
       try {
         const item = window.localStorage.getItem(key);
-        setValue(item ? JSON.parse(item) : defaultValue);
+        if (item) {
+          console.log("[useLocalStorage] getItem Effect / found", item);
+          setValue(JSON.parse(item));
+        } else {
+          console.log("[useLocalStorage] getItem Effect / just init ls");
+          window.localStorage.setItem(key, JSON.stringify(defaultValue));
+        }
       } catch (error) {
         console.log(error);
       }
@@ -20,6 +28,8 @@ export const useLocalStorageState = (key, defaultValue) => {
     }
   }, []);
 
+  const isInitialRender = useRef(true);
+
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
@@ -27,7 +37,16 @@ export const useLocalStorageState = (key, defaultValue) => {
       window.localStorage
     ) {
       try {
-        window.localStorage.setItem(key, JSON.stringify(value));
+        if (!isInitialRender.current) {
+          console.log("[useLocalStorage] setItem Effect / new value is", value);
+          window.localStorage.setItem(key, JSON.stringify(value));
+        } else {
+          console.log(
+            "[useLocalStorage] setItem Effect / SKIPPED / value would have been",
+            value
+          );
+          isInitialRender.current = false;
+        }
       } catch (error) {
         console.log(error);
       }
