@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../../context/CartContext";
 
-const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
-
+const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
   const { addItem } = useCart();
   const [amount, setAmount] = useState(minimum);
   const [open, setOpen] = useState(false);
@@ -17,7 +16,14 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum }) => {
   };
 
   const handleSubmit = (event) => {
-    addItem({ _id, name, slug, amount: amount, variant: variant.value });
+    addItem({
+      _id,
+      name,
+      slug,
+      amount: amount,
+      variant: variant.value,
+      price: price,
+    });
     event.preventDefault();
     setAmount(() => 0);
   };

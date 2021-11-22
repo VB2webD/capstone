@@ -64,6 +64,7 @@ const ItemDetails = ({
           weight={weight}
           variant={selectedOption}
           minimum={minimum}
+          price={price}
         />
       ) : (
         <SoldOut width={255} height={255} />

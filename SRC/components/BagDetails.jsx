@@ -76,6 +76,7 @@ const BagDetails = ({
             name={name}
             slug={slug}
             variant={{ value: `${selectedVariant.weight}g` }}
+            price={selectedVariant.price}
             minimum={1}
           />
         ) : (
