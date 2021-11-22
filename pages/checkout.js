@@ -7,14 +7,13 @@ import Link from "next/link";
 
 const Checkout = () => {
   const { itemsInCart, addItem, removeItem } = useCart();
-
-  let total = 0;
-  itemsInCart.forEach((item) => {
-    total += item.variants.amount;
-  });
-
-  console.log("type of total " + typeof total + " is " + total);
-
+  
+  let total = itemsInCart.reduce(
+    (total, { variants }) =>
+      total +
+      variants.reduce((total, item) => total + item.amount * item.price, 0),
+    0
+  );
   return (
     <Layout title="Checkout" hasFooter>
       <StyledCheckout>
@@ -25,7 +24,7 @@ const Checkout = () => {
           ))}
           <div className="total">
             <span>Total </span>
-            <span>{total}</span>
+            <span>{numberFormat.format(total)}</span>
           </div>
         </ul>
         <Link href="submit">
@@ -38,6 +37,11 @@ const Checkout = () => {
 
 export default Checkout;
 
+var numberFormat = new Intl.NumberFormat("de-DE", {
+  style: "currency",
+  currency: "EUR",
+});
+
 /* -------
  Styles:
 ------- */
@@ -47,7 +51,7 @@ const StyledCheckout = styled.div`
     background-color: white;
     padding: 0;
     vertical-align: middle;
-    
+
     .total {
       display: flex;
       justify-content: space-between;
