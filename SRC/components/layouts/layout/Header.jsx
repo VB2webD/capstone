@@ -20,7 +20,7 @@ const StyledFlex = styled.div`
 
 const StyledTitle = styled.div`
   position: relative;
-  left: 50%;
+  left: 5%;
   top: 1.3rem;
 `;
 

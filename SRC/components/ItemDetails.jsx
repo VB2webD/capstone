@@ -4,7 +4,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Select from "react-select";
 import CounterForm from "./CounterForm";
-import Vegan from "./images/vegan.svg";
+import Delete from "./images/delete.svg";
 import SoldOut from "./images/soldOut.svg";
 
 var numberFormat = new Intl.NumberFormat("de-DE", {
@@ -25,7 +25,7 @@ const ItemDetails = ({
   options,
 }) => {
   const [selectedOption, setSelectedOption] = useState({
-    value: "🌈",
+    value: "Farbe Egal",
     label: "🌈",
   });
 
@@ -37,9 +37,11 @@ const ItemDetails = ({
   return (
     <StyledCard>
       <Link href="/shop">
-        <button>╳</button>
+        <button>
+          <Delete height={36} width={36}/>
+        </button>
       </Link>
-      <h2>{name} </h2>
+      <h1>{name} </h1>
       <Image src={image} width={355} height={355} />
       <p>{description}</p>
       <p>{numberFormat.format(price)}</p>
@@ -83,9 +85,9 @@ const StyledCard = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0.5rem;
 
-  h2 {
+  h1 {
+    font-size: 3rem;
     color: var(--cta-color-main-active);
   }
 
