@@ -94,7 +94,8 @@ export default CounterForm;
 
 const StyledForm = styled.form`
   input {
-    background-color: var(--cta-color-bag-active);
+    background-color: var(--cta-color-main-active);
+    color: white;
     border: none;
     height: 2rem;
     width: 90%;
@@ -110,6 +111,7 @@ const StyledForm = styled.form`
     input {
       text-align: center;
       background-color: var(--bg-color-main-dark);
+      color: unset;
       border-radius: 5px;
       height: 2rem;
       width: 2rem;

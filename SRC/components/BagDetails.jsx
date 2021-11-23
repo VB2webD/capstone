@@ -37,61 +37,64 @@ const BagDetails = ({
   return (
     <StyledCard>
       <div>
-        <Image src={image} width={275} height={350} />
-      </div>
-      <div>
         <Link href="/specials">
           <button>╳</button>
         </Link>
         <h2>{name} </h2>
-        {isVegan ? <Vegan width={100} height={100} /> : ""}
-        <p>{numberFormat.format(selectedVariant.price)}</p>
-        <p>
-          {selectedVariant.weight
-            ? numberFormat.format(
-                (
-                  (selectedVariant.price / selectedVariant.weight) *
-                  100
-                ).toFixed(2)
-              ) + " / 100g"
-            : null}
-        </p>
-        <hr />
-        <h3>Größe</h3>
-        {variants ? (
-          <Select
-            value={selectedVariantIndex}
-            options={options}
-            placeholder={selectedVariant.weight + "g"}
-            onChange={handleVariantChange}
-          />
-        ) : (
-          ""
-        )}
-        <h3>Menge</h3>
-        {isInStock ? (
-          <CounterForm
-            key={name}
-            _id={_id}
-            name={name}
-            slug={slug}
-            variant={{ value: `${selectedVariant.weight}g` }}
-            price={selectedVariant.price}
-            minimum={1}
-          />
-        ) : (
-          <SoldOut width={255} height={255} />
-        )}
-        <hr />
-        <div>
-          <h3>Inhalt</h3>
-          <ul>
-            {contains.map((item, index) => (
-              <BagDetailsItem key={index} item={item} />
-            ))}
-          </ul>
-        </div>
       </div>
+      <StyledWrapper>
+        <div>
+          <Image src={image} width={200} height={300} />
+        </div>
+        <div>
+          <hr />
+          <h3>Größe</h3>
+          {variants ? (
+            <Select
+              value={selectedVariantIndex}
+              options={options}
+              placeholder={selectedVariant.weight + "g"}
+              onChange={handleVariantChange}
+            />
+          ) : (
+            ""
+          )}
+          <h3>Menge</h3>
+          {isInStock ? (
+            <CounterForm
+              key={name}
+              _id={_id}
+              name={name}
+              slug={slug}
+              variant={{ value: `${selectedVariant.weight}g` }}
+              price={selectedVariant.price}
+              minimum={1}
+            />
+          ) : (
+            <SoldOut width={255} height={255} />
+          )}
+          <hr />
+          <span>{numberFormat.format(selectedVariant.price)}</span>
+          <span>
+            {selectedVariant.weight
+              ? numberFormat.format(
+                  (
+                    (selectedVariant.price / selectedVariant.weight) *
+                    100
+                  ).toFixed(2)
+                ) + " / 100g"
+              : null}
+          </span>
+        </div>
+      </StyledWrapper>
+      <StyledContent>
+        <h3>Inhalt</h3>
+        <ul>
+          {contains.map((item, index) => (
+            <BagDetailsItem key={index} item={item} />
+          ))}
+        </ul>
+      </StyledContent>
     </StyledCard>
   );
 };
@@ -110,17 +113,11 @@ var numberFormat = new Intl.NumberFormat("de-DE", {
 const StyledCard = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
-  padding: 1rem;
-  gap: 1rem;
 
   h2 {
     color: var(--cta-color-main-active);
-  }
-
-  h3 {
-    text-align: left;
   }
 
   button {
@@ -132,7 +129,22 @@ const StyledCard = styled.div`
     border: none;
     background-color: unset;
   }
+`;
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-grow: inherit;
+`;
 
+const StyledContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  h3 {
+    text-align: left;
+    margin: 0;
+  }
   ul {
     text-align: left;
     list-style-type: none;
