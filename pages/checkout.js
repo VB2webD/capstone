@@ -20,13 +20,14 @@ const Checkout = () => {
         <h2>Deine Bestellung</h2>
         <ul>
           {" "}
-          {/* checkoutItems */}
           {itemsInCart.map(({ name, slug, variants }) => (
             <CheckoutItem key={slug} name={name} variants={variants} />
           ))}
-          <div className="total">Total {numberFormat.format(total)}</div>
+          <div className="total">
+            <span>Total</span> <span>{numberFormat.format(total)}</span>
+          </div>
         </ul>
-        <Link href="/submit" prefetch>
+        <Link href="/submit">
           <a className="confirm">Passt alles</a>
         </Link>
       </StyledCheckout>
@@ -50,6 +51,7 @@ const StyledCheckout = styled.div`
     background-color: white;
     padding: 0;
     vertical-align: middle;
+    margin-bottom: 10%;
 
     .total {
       display: flex;
@@ -67,5 +69,13 @@ const StyledCheckout = styled.div`
     width: 50%;
     height: 4rem;
     margin-left: 25%;
+  }
+  a {
+    align-self: center;
+    padding: 1rem 2rem;
+    width: 80%;
+    border-radius: 3px;
+    background-color: var(--cta-color-bag);
+    margin: 10%;
   }
 `;
