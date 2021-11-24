@@ -31,7 +31,7 @@ const StyledFooter = styled.footer`
   width: 100vw;
   bottom: 0;
   height: var(--footer-height);
-  justify-content: space-around;
+  justify-content: stretch;
   align-items: center;
   background-color: var(--bg-color-main-white);
   padding: 0;
@@ -48,6 +48,7 @@ const StyledFooter = styled.footer`
     height: var(--footer-height);
     text-align: center;
     padding-top: 1.3rem;
+    flex: 1;
 
     &:hover {
       background-color: var(--cta-color-main);
