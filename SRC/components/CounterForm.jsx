@@ -65,6 +65,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
           min="1"
           max="99"
           step="1"
+          className="input"
           id="amount"
           name="amount"
           value={amount}
@@ -107,6 +108,11 @@ const StyledForm = styled.form`
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+
+    .input {
+      background-color: white;
+      border: 3px solid var(--bg-color-main-dark);
+    }
 
     input {
       text-align: center;
