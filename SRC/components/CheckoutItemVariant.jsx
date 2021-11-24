@@ -15,7 +15,7 @@ const CheckoutItemVariant = ({ variant, amount, price }) => {
 
 export default CheckoutItemVariant;
 
-var numberFormat = new Intl.NumberFormat("de-DE", {
+const numberFormat = new Intl.NumberFormat("de-DE", {
   style: "currency",
   currency: "EUR",
 });

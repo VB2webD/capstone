@@ -3,8 +3,6 @@ import styled from "styled-components";
 import CheckoutItemVariant from "./CheckoutItemVariant";
 
 const CheckoutItem = ({ name, variants }) => {
-  const [showDetails, setShowDetails] = useState(false);
-
   let total = 0;
   let totalPrice = 0;
 
@@ -16,16 +14,13 @@ const CheckoutItem = ({ name, variants }) => {
 
   return (
     <StyledLi>
-      <div className="item">
-        <span>
-          {total} x {name}
-        </span>
-        <span>{numberFormat.format(totalPrice)}</span>
-      </div>
-      <button onClick={() => setShowDetails(!showDetails)}>
-        {showDetails ? "⬇" : "➡"}
-      </button>
-      {showDetails ? (
+      <details className="item">
+        <summary className="item">
+          <span>
+            {total} x {name}
+          </span>
+          <span>{numberFormat.format(totalPrice)}</span>
+        </summary>
         <span>
           {variants.map(({ variant, amount, price }) => (
             <CheckoutItemVariant
@@ -36,7 +31,7 @@ const CheckoutItem = ({ name, variants }) => {
             />
           ))}
         </span>
-      ) : null}
+      </details>
     </StyledLi>
   );
 };
@@ -52,9 +47,9 @@ var numberFormat = new Intl.NumberFormat("de-DE", {
  Styles:
 ------- */
 
-const StyledLi = styled.li`
+const StyledLi = styled.div`
   list-style-type: none;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0 0;
   margin-left: 0;
 
   :nth-child(odd) {
@@ -64,11 +59,5 @@ const StyledLi = styled.li`
   .item {
     display: flex;
     justify-content: space-between;
-  }
-
-  button {
-    background-color: inherit;
-    border: none;
-    display: inline-block;
   }
 `;
