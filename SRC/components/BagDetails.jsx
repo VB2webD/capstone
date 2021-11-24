@@ -46,7 +46,6 @@ const BagDetails = ({
           <Image src={image} width={200} height={300} />
         </div>
         <div>
-          <hr />
           <h3>Größe</h3>
           {variants ? (
             <Select
@@ -72,7 +71,6 @@ const BagDetails = ({
           ) : (
             <SoldOut width={255} height={255} />
           )}
-          <hr />
         </div>
       </StyledWrapper>
       <span>{numberFormat.format(selectedVariant.price)}</span>
@@ -139,10 +137,12 @@ const StyledContent = styled.div`
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
   h3 {
     text-align: left;
     margin: 0;
   }
+
   ul {
     text-align: left;
     list-style-type: none;
