@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Checkout = () => {
   const { itemsInCart, addItem, removeItem } = useCart();
-  
+
   let total = itemsInCart.reduce(
     (total, { variants }) =>
       total +
@@ -19,16 +19,15 @@ const Checkout = () => {
       <StyledCheckout>
         <h2>Deine Bestellung</h2>
         <ul>
+          {" "}
+          {/* checkoutItems */}
           {itemsInCart.map(({ name, slug, variants }) => (
             <CheckoutItem key={slug} name={name} variants={variants} />
           ))}
-          <div className="total">
-            <span>Total </span>
-            <span>{numberFormat.format(total)}</span>
-          </div>
+          <div className="total">Total {numberFormat.format(total)}</div>
         </ul>
-        <Link href="submit">
-          <button className="confirm">Passt alles</button>
+        <Link href="/submit" prefetch>
+          <a className="confirm">Passt alles</a>
         </Link>
       </StyledCheckout>
     </Layout>

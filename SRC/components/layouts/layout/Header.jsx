@@ -12,6 +12,7 @@ const Header = ({ title, hasCart }) => {
     </StyledHeader>
   );
 };
+
 export default Header;
 
 const StyledFlex = styled.div`

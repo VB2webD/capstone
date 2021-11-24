@@ -21,6 +21,10 @@ export function Footer() {
   );
 }
 
+/* -------
+ Styles:
+------- */
+
 const StyledFooter = styled.footer`
   position: fixed;
   display: flex;

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Select from "react-select";
 import CounterForm from "./CounterForm";
 import BagDetailsItem from "./BagDetailsItem";
-import Vegan from "./images/vegan.svg";
 import SoldOut from "./images/soldOut.svg";
 
 const BagDetails = ({
@@ -38,7 +37,7 @@ const BagDetails = ({
     <StyledCard>
       <div>
         <Link href="/specials">
-          <button>╳</button>
+          <a>╳</a>
         </Link>
         <h2>{name} </h2>
       </div>
@@ -74,19 +73,18 @@ const BagDetails = ({
             <SoldOut width={255} height={255} />
           )}
           <hr />
-          <span>{numberFormat.format(selectedVariant.price)}</span>
-          <span>
-            {selectedVariant.weight
-              ? numberFormat.format(
-                  (
-                    (selectedVariant.price / selectedVariant.weight) *
-                    100
-                  ).toFixed(2)
-                ) + " / 100g"
-              : null}
-          </span>
         </div>
       </StyledWrapper>
+      <span>{numberFormat.format(selectedVariant.price)}</span>
+      <span>
+        {selectedVariant.weight
+          ? numberFormat.format(
+              ((selectedVariant.price / selectedVariant.weight) * 100).toFixed(
+                2
+              )
+            ) + " / 100g"
+          : null}
+      </span>
       <StyledContent>
         <h3>Inhalt</h3>
         <ul>
