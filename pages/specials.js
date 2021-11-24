@@ -37,6 +37,7 @@ const StyledList = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+  margin: 4%;
 
   h1 {
     text-align: center;
