@@ -18,7 +18,7 @@ export default function Home() {
             <a>Schnuckertüten</a>
           </Link>
           <Link href="/shop">
-            <a>Jetz Mischen</a>
+            <a>Jetzt Mischen</a>
           </Link>
         </div>
         <h2>Mischen is possible!</h2>
