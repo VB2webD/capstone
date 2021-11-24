@@ -29,6 +29,7 @@ const StyledCanvas = styled.canvas`
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.2);
 `;
 
