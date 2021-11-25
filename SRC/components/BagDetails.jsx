@@ -55,7 +55,7 @@ const BagDetails = ({
               onChange={handleVariantChange}
             />
           ) : (
-            ""
+            null
           )}
           <h3>Menge</h3>
           {isInStock ? (
