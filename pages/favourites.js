@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../SRC/components/layouts/layout/Layout";
+import Layout from "../src/components/layouts/layout/Layout";
 
 const Favourites = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { getItem, getItems } from "../../../utils/data/getData";
-import ItemDetails from "../../../SRC/components/ItemDetails";
-import Layout from "../../../SRC/components/layouts/layout/Layout";
+import ItemDetails from "../../../src/components/ItemDetails";
+import Layout from "../../../src/components/layouts/layout/Layout";
 
 const Details = ({
   data: {
