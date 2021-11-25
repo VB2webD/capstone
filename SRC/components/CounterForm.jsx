@@ -61,6 +61,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
           aria-label="decrement amount by 1"
         />
         <input
+          autoComplete="off"
           type="number"
           min="1"
           max="99"
