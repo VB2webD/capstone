@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import Layout from "../SRC/components/layouts/layout/Layout";
-import Backdrop from "../SRC/components/Backdrop";
+import Layout from "../src/components/layouts/layout/Layout";
+import Backdrop from "../src/components/Backdrop";
 import styled from "styled-components";
 import { Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
-import Rating from "../SRC/components/Rating";
+import Rating from "../src/components/Rating";
 
 export default function Home() {
   // Mui
