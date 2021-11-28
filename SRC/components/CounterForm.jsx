@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "../../context/CartContext";
+import Toast from "./Toast";
 
 const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
+  const [open, setOpen] = useState(false);
   const { addItem } = useCart();
   const [amount, setAmount] = useState(minimum);
 
@@ -29,6 +31,7 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
     });
     event.preventDefault();
     setAmount(() => 1);
+    setOpen(true);
   };
 
   const amountHandlerInputChange = (event) => {
@@ -52,7 +55,8 @@ const CounterForm = ({ _id, slug, name, isTiny, variant, minimum, price }) => {
   */
 
   return (
-    <StyledForm onSubmit={handleSubmit} isTiny={isTiny}>
+    <StyledForm onSubmit={handleSubmit} >
+      <Toast open={open} isTiny={isTiny} setOpen={setOpen} name={name} amount={amount} />
       <fieldset>
         <input
           type="button"

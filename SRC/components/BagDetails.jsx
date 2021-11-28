@@ -12,7 +12,6 @@ const BagDetails = ({
   slug,
   name,
   image,
-  isVegan,
   contains,
   variants,
   isInStock,
@@ -39,14 +38,28 @@ const BagDetails = ({
         <Link href="/specials">
           <a>╳</a>
         </Link>
-        <h2>{name} </h2>
       </div>
+      <h2>{name} </h2>
       <StyledWrapper>
         <div>
           <Image src={image} width={200} height={300} />
         </div>
         <div>
           <h3>Größe</h3>
+          <div>
+            <span>{numberFormat.format(selectedVariant.price)}</span>
+            <br />
+            <span>
+              {selectedVariant.weight
+                ? numberFormat.format(
+                    (
+                      (selectedVariant.price / selectedVariant.weight) *
+                      100
+                    ).toFixed(2)
+                  ) + " / 100g"
+                : null}
+            </span>
+          </div>
           {variants ? (
             <Select
               value={selectedVariantIndex}
@@ -54,9 +67,7 @@ const BagDetails = ({
               placeholder={selectedVariant.weight + "g"}
               onChange={handleVariantChange}
             />
-          ) : (
-            null
-          )}
+          ) : null}
           <h3>Menge</h3>
           {isInStock ? (
             <CounterForm
@@ -73,16 +84,6 @@ const BagDetails = ({
           )}
         </div>
       </StyledWrapper>
-      <span>{numberFormat.format(selectedVariant.price)}</span>
-      <span>
-        {selectedVariant.weight
-          ? numberFormat.format(
-              ((selectedVariant.price / selectedVariant.weight) * 100).toFixed(
-                2
-              )
-            ) + " / 100g"
-          : null}
-      </span>
       <StyledContent>
         <h3>Inhalt</h3>
         <ul>
@@ -114,18 +115,20 @@ const StyledCard = styled.div`
 
   h2 {
     color: var(--cta-color-main-active);
+    font-size: 36;
   }
 
-  button {
+  a {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 0;
     height: 2rem;
     width: 2rem;
     border: none;
     background-color: unset;
   }
 `;
+
 const StyledWrapper = styled.div`
   display: flex;
   flex-grow: inherit;

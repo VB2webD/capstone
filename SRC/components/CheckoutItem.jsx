@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import CheckoutItemVariant from "./CheckoutItemVariant";
 
@@ -15,14 +15,14 @@ const CheckoutItem = ({ name, variants }) => {
   return (
     <StyledLi>
       <details className="item">
-        <summary className="item">
+        <summary>
           <span>
             {total} x {name}
           </span>
           <span>{numberFormat.format(totalPrice)}</span>
         </summary>
         <span>
-          {variants.map(({ variant, amount, price }) => (
+          {filteredVariants.map(({ variant, amount, price }) => (
             <CheckoutItemVariant
               key={variant}
               variant={variant}
@@ -54,6 +54,11 @@ const StyledLi = styled.div`
 
   :nth-child(odd) {
     background-color: var(--bg-color-main-white);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
   }
 
   .item {

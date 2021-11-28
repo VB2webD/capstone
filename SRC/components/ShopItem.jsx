@@ -12,7 +12,7 @@ const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
       <div>
         <h2>{name}</h2>
         <Link href={`/details/items/${slug}`}>
-          <a>Details</a>
+          <a className="details">Details</a>
         </Link>
         <p>{numberFormat.format(price)}</p>
       </div>
@@ -56,7 +56,7 @@ const ItemContainer = styled.div`
   background-color: var(--bg-color-main-white);
   padding-top: 1rem;
 
-  a {
+  .details {
     color: var(--cta-color-main-active);
 
     ::after {
@@ -74,7 +74,7 @@ const ItemContainer = styled.div`
     flex-direction: column;
     align-content: center;
     min-height: fit-content;
-    width: 100%;
+
 
     h2 {
       height: 2rem;
