@@ -53,7 +53,7 @@ const StyledPage = styled.div`
   margin: 10%;
   div {
     display: flex;
-    width: 100%;
+    min-width: 400px;
     flex-direction: column;
     justify-items: center;
     margin: auto;
@@ -63,7 +63,8 @@ const StyledPage = styled.div`
     align-self: center;
 
     padding: 1rem 2rem;
-    width: 80%;
+    min-width: 400px;
+    max-width: 80%;
     border-radius: 3px;
     background-color: var(--cta-color-bag-active);
     margin: 4%;
