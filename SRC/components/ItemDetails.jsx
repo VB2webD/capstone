@@ -42,7 +42,7 @@ const ItemDetails = ({
         </button>
       </Link>
       <h1>{name} </h1>
-      <Image src={image} width={355} height={355} />
+      <Image src={image} width={255} height={255} />
       <p>{description}</p>
       <p>{numberFormat.format(price)}</p>
 
