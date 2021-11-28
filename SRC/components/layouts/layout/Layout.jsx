@@ -22,12 +22,13 @@ export default Layout;
 ------- */
 
 const StyledMain = styled.main`
-  position: absolute;
-  top: var(--header-height);
-  bottom: ${(props) => (props.hasFooter ? "var(--footer-height)" : 0)};
-  width: 100vw;
-  margin: 1vw, 0;
-  padding: 0 1vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--header-height);
+  margin-bottom: ${(props) => (props.hasFooter ? "var(--footer-height)" : 0)};
+  padding: 0 5%;
+
   line-break: normal;
   z-index: 0;
   background-color: var(--bg-color-main-light);

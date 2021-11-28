@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import CartInventory from "./CartInventory";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import Tute from "./images/tute.svg";
 
 const ShoppingCart = () => {

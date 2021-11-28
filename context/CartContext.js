@@ -37,10 +37,16 @@ export function CartProvider({ children }) {
 
           current.variants[indexOfVariant].amount += item.amount;
         } else {
-          current.variants.push({ variant: item.variant, amount: item.amount });
+          current.variants.push({
+            variant: item.variant,
+            amount: item.amount,
+            price: item.price,
+          });
         }
       } else {
-        current.variants = [{ variant: item.variant, amount: item.amount }];
+        current.variants = [
+          { variant: item.variant, amount: item.amount, price: item.price },
+        ];
       }
 
       setItemsInCart([...front, current, ...back]);
@@ -48,7 +54,9 @@ export function CartProvider({ children }) {
       const newItem = {
         name: item.name,
         slug: item.slug,
-        variants: [{ variant: item.variant, amount: item.amount }],
+        variants: [
+          { variant: item.variant, amount: item.amount, price: item.price },
+        ],
       };
       setItemsInCart([...itemsInCart, newItem]);
     }

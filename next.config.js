@@ -1,9 +1,23 @@
-module.exports = svgr({
-  reactStrictMode: true,
-  images: {
-    domains: ["cdn.shopify.com"],
-  },
-});
+const withTM = require("next-transpile-modules")([
+  "@mui/material",
+  "@mui/system",
+]);
+
+module.exports = withTM(
+  svgr({
+    reactStrictMode: true,
+    images: {
+      domains: ["cdn.shopify.com"],
+    },
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        "@mui/styled-engine": "@mui/styled-engine-sc",
+      };
+      return config;
+    },
+  })
+);
 
 function svgr(nextConfig = {}) {
   return Object.assign({}, nextConfig, {

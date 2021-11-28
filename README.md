@@ -52,3 +52,13 @@ Ideation
 - adapt item display to show total amount of all variants of specific item
 - fix images for vercel deployment
 
+## Week 4
+
+- implement Mui, change Style Engine to styled-components
+- create checkout page
+- implement item variants as details
+- create submit page
+- create modal
+- add confetti on purchase confirmation
+- rework index page
+- general stylingoverhaul for pitch video

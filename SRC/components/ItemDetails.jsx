@@ -4,7 +4,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Select from "react-select";
 import CounterForm from "./CounterForm";
-import Vegan from "./images/vegan.svg";
+import Delete from "./images/delete.svg";
 import SoldOut from "./images/soldOut.svg";
 
 var numberFormat = new Intl.NumberFormat("de-DE", {
@@ -25,7 +25,7 @@ const ItemDetails = ({
   options,
 }) => {
   const [selectedOption, setSelectedOption] = useState({
-    value: "🌈",
+    value: "Farbe Egal",
     label: "🌈",
   });
 
@@ -37,13 +37,13 @@ const ItemDetails = ({
   return (
     <StyledCard>
       <Link href="/shop">
-        <button>╳</button>
+        <button>
+          <Delete height={36} width={36}/>
+        </button>
       </Link>
-      <h2>{name} </h2>
-      {isVegan ? <Vegan width={100} height={100} /> : ""}
-      <Image src={image} width={355} height={355} />
+      <h1>{name} </h1>
+      <Image src={image} width={255} height={255} />
       <p>{description}</p>
-      <p>{weight} g</p>
       <p>{numberFormat.format(price)}</p>
 
       {option ? (
@@ -64,6 +64,7 @@ const ItemDetails = ({
           weight={weight}
           variant={selectedOption}
           minimum={minimum}
+          price={price}
         />
       ) : (
         <SoldOut width={255} height={255} />
@@ -84,19 +85,19 @@ const StyledCard = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  gap: 1rem;
 
-  h2 {
+  h1 {
+    font-size: 3rem;
     color: var(--cta-color-main-active);
   }
 
   button {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     height: 2rem;
     width: 2rem;
+    font-size: 1.5rem;
     border: none;
     background-color: unset;
   }

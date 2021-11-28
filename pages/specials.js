@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Layout from "../components/layouts/layout/Layout";
-import Bag from "../components/Bag";
+import Layout from "../SRC/components/layouts/layout/Layout";
+import Bag from "../SRC/components/Bag";
 import styled from "styled-components";
 import { getBags } from "../utils/data/getData";
 
@@ -8,7 +8,7 @@ const Specials = ({ bags }) => {
   return (
     <>
       <Layout title="Specials" hasFooter hasCart>
-        <h1>Vertige Mischungen</h1>
+        <h1>Schnuckertüten</h1>
         <StyledList>
           {bags.map(({ slug, image, isVegan, name, variants }) => (
             <Bag
@@ -37,6 +37,7 @@ const StyledList = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+  margin: 4%;
 
   h1 {
     text-align: center;

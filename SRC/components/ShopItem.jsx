@@ -8,11 +8,11 @@ import Image from "next/image";
 const ShopItem = ({ slug, name, price, image, isInStock, minimum }) => {
   return (
     <ItemContainer>
-      <Image src={image} width={125} height={125} alt={`Image of ${name}`} />
+      <Image src={image} width={145} height={145} alt={`Image of ${name}`} />
       <div>
         <h2>{name}</h2>
         <Link href={`/details/items/${slug}`}>
-          <a>Details</a>
+          <a className="details">Details</a>
         </Link>
         <p>{numberFormat.format(price)}</p>
       </div>
@@ -49,13 +49,14 @@ const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
   align-items: center;
   border-radius: 1rem;
   background-color: var(--bg-color-main-white);
-  gap: 0.5rem;
+  padding-top: 1rem;
 
-  a {
+  .details {
     color: var(--cta-color-main-active);
 
     ::after {
@@ -73,10 +74,10 @@ const ItemContainer = styled.div`
     flex-direction: column;
     align-content: center;
     min-height: fit-content;
-    width: 100%;
+
 
     h2 {
-      height: 4rem;
+      height: 2rem;
     }
   }
 `;

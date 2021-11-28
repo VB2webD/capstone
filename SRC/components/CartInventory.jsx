@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import CartItem from "./CartItem";
 import Link from "next/link";
 
@@ -30,8 +30,8 @@ const StyledDiv = styled.div`
   position: fixed;
   top: var(--header-height);
   right: 0;
-  height: 15vh;
-  width: 15vw;
+  height: minmax(fit-content, 25vh);
+  width: 100vw;
   background-color: var(--bg-color-main-dark);
   list-style-type: none;
   margin: 0;
