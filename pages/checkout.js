@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../src/components/layouts/layout/Layout";
+import Layout from "../SRC/components/layouts/layout/Layout";
 import { useCart } from "../context/CartContext";
-import CheckoutItem from "../src/components/CheckoutItem";
+import CheckoutItem from "../SRC/components/CheckoutItem";
 import styled from "styled-components";
 import Link from "next/link";
 

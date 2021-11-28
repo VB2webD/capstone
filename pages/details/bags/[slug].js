@@ -1,7 +1,7 @@
 import React from "react";
 import { getBag, getBags } from "../../../utils/data/getData";
-import BagDetails from "../../../src/components/BagDetails";
-import Layout from "../../../src/components/layouts/layout/Layout";
+import BagDetails from "../../../SRC/components/BagDetails";
+import Layout from "../../../SRC/components/layouts/layout/Layout";
 
 const Details = ({
   data: { _id, name, image, isVegan, contains, variants, purchased, isInStock },

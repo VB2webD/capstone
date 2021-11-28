@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from "../src/components/layouts/layout/Layout";
-import ShopItem from "../src/components/ShopItem";
+import Layout from "../SRC/components/layouts/layout/Layout";
+import ShopItem from "../SRC/components/ShopItem";
 import { getItems } from "../utils/data/getData";
 
 const Shop = ({ items }) => {
