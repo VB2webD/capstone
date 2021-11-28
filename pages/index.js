@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout title="Candy Shop" hasFooter hasCart>
       <StyledPage>
-        <h1>Schön das du da bist!</h1>
+        <h1>Schön, dass du da bist!</h1>
         <div>
           <StyledImage src={Avatar} width={350} height={300} />
         </div>

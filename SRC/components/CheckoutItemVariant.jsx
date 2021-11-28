@@ -28,5 +28,5 @@ const StyledItemVariant = styled.div`
   display: flex;
   justify-content: space-between;
   font: 0.8rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 `;
